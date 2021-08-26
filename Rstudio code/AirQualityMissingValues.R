@@ -5,6 +5,8 @@ library(sqldf)
 library(ggplot2)
 library(ggfortify)
 
+# add 2018
+
 #Data download with ARPALData
 #2019
 data2019 <- get_ARPA_Lombardia_AQ_data(
@@ -84,6 +86,7 @@ Pavia2019 <-  sqldf('SELECT Date, IDStation, NameStation, Ammonia, PM10, PM25
                        FROM cast2019
                        WHERE IDStation = 642
                        ')
+# add extra stations
 
 all2019 <- NULL
 
@@ -581,3 +584,31 @@ dev.off()
 jpeg(filename = "mappa 2019-2020",width = 1280, height = 720 )
 map_Lombardia_stations(data1920)
 dev.off()
+
+library(lubridate)
+
+registry <- get_ARPA_Lombardia_AQ_registry()
+
+registry %>% 
+  filter(Pollutant%in% c("Ammonia","PM10","PM2.5")) %>%
+  View
+
+IDStat <- registry %>% 
+  filter(Pollutant%in% c("Ammonia","PM10","PM2.5"),
+         is.na(DateStop),
+         year(DateStart)<=2017) %>%
+  distinct(IDSensor) %>% pull() %>% sort() 
+
+RegistryRed <- registry %>% 
+  filter(Pollutant%in% c("Ammonia","PM10","PM2.5"),
+         IDSensor%in% IDStat) 
+
+map_Lombardia_stations(RegistryRed)
+
+RegistryRed %>% 
+  group_by(IDStation) %>% 
+  summarise(n=n()) %>%
+  filter(n>=2) %>% 
+  distinct(IDStation) %>%
+  pull()
+  
