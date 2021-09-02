@@ -26,71 +26,46 @@ bestcentralines <- RegistryRed %>%
   distinct(IDStation) %>%
   pull() # stations that measure at least 2 of the variables at the same time
 
-map_Lombardia_stations(bestcentralines) # TODO ld-style crs object detected; please recreate object with a recent sf::st_crs()
+#Plot of the best centralines
+map_Lombardia_stations(bestcentralines)
 
-#Downloading data from the best stations (the ones that measure at least 2 of the variables since 2017)
-#2018
-data2018 <- get_ARPA_Lombardia_AQ_data(
-  ID_station = c(bestcentralines),
-  Year = 2018,
-  Frequency = "daily",
-  Var_vec = NULL,
-  Fns_vec = NULL,
-  by_sensor = 0,
-  verbose = T
-)
+#Starting with the loop for downloading the data + casting of the data
 
-#2019
-data2019 <- get_ARPA_Lombardia_AQ_data(
-  ID_station = c(bestcentralines),
-  Year = 2019,
-  Frequency = "daily",
-  Var_vec = NULL,
-  Fns_vec = NULL,
-  by_sensor = 0,
-  verbose = T
-)
+startyear <- 2018
+lastyear  <- 2020
 
-#2020
-data2020 <- get_ARPA_Lombardia_AQ_data(
-  ID_station = c(bestcentralines),
-  Year = 2020,
-  Frequency = "daily",
-  Var_vec = NULL,
-  Fns_vec = NULL,
-  by_sensor = 0,
-  verbose = T
-)
+data <- NULL
+cast <- NULL
 
-#Casting of the variables (allows for manipulation with SQL)
-cast2018 <- data.frame(data2018)
-cast2019 <- data.frame(data2019)
-cast2020 <- data.frame(data2020)
-
-#Renaming the variables (SQL misinterprets periods)
-cast2018 = cast2018 %>%
-  rename(
-    PM25 = PM2.5
+for(index in startyear:lastyear) {
+  #Downloading
+  data[[1+index-startyear]] <- get_ARPA_Lombardia_AQ_data(
+    ID_station = c(bestcentralines),
+    Year = index,
+    Frequency = "daily",
+    Var_vec = NULL,
+    Fns_vec = NULL,
+    by_sensor = 0,
+    verbose = T
   )
-cast2019 = cast2019 %>%
-  rename(
-    PM25 = PM2.5
-  )
-cast2020 = cast2020 %>%
-  rename(
-    PM25 = PM2.5
-  )
-
-# Helper functions 
-
+  #Casting
+  cast[[1+index-startyear]] <- data.frame(data[[1+index-startyear]] )
+  
+  #Renaming
+  cast[[1+index-startyear]] <- cast[[1+index-startyear]]  %>%
+    rename(
+      PM25 = PM2.5
+    )
+}
+#Supporting functions 
 MissingTable <- function(Variable, Table) {
   library(sqldf)
   
   tableMissing <- sqldf(paste('SELECT IDStation, NameStation, count(*) as Missing', Variable,
                               ' FROM ', Table,
                               ' WHERE ',Variable,' is null 
-                        GROUP BY IDStation
-                        ORDER BY Missing', Variable, sep = ''))  # stations where there is at least 1 missing value
+                                GROUP BY IDStation
+                                ORDER BY Missing', Variable, sep = ''))  # stations where there minimun 1 missing value
   
   rest <- sqldf(paste(' SELECT IDStation, NameStation, 0 as Missing', Variable,
                       ' FROM ', Table,
@@ -98,7 +73,7 @@ MissingTable <- function(Variable, Table) {
                         SELECT IDStation, NameStation, 0 as Missing', Variable,
                       ' FROM ', Table,
                       ' WHERE ', Variable,' is null 
-                        GROUP BY IDStation', sep = '' )) # stations where there is at least no missing values
+                        GROUP BY IDStation', sep = '' )) # stations where there are no missing values
   
   return ( sqldf(paste('SELECT *
                                FROM tableMissing
@@ -109,6 +84,7 @@ MissingTable <- function(Variable, Table) {
   )) ) # all stations with regards to this variable
   
 }
+
 
 MissingAll <- function(Table) {
   library(sqldf)
@@ -121,15 +97,15 @@ MissingAll <- function(Table) {
                         ORDER BY MissingAllThree', sep = ''
   ))
   
-  rest <- sqldf(paste('         SELECT IDStation, NameStation, 0 as MissingPM10
-                        FROM ', Table,
-                      ' EXCEPT
-                        SELECT IDStation, NameStation, 0 as MissingPM10
-                        FROM ', Table,
-                      ' WHERE Ammonia is null and PM10 is null and PM25 is null
+  rest <- sqldf(paste('         SELECT IDStation, NameStation, 0 as MissingAllThree
+                        FROM ', Table,'
+                        EXCEPT
+                        SELECT IDStation, NameStation, 0 as MissingAllThree
+                        FROM ', Table,' 
+                        WHERE Ammonia is null AND PM10 is null AND PM25 is null
                         GROUP BY IDStation', sep = ''))
   
-  return (sqldf('SELECT *
+  return (                     sqldf('SELECT *
                                FROM missingAll
                                UNION
                                SELECT *
@@ -138,88 +114,272 @@ MissingAll <- function(Table) {
                               '))
 }
 
-#Starting with the queries
-#2018
-table2018MissingAmmmonia <- MissingTable('Ammonia', 'cast2018')
+tableMissingAmmmonia<-NULL
+tableMissingPM10<-NULL
+tableMissingPM25<-NULL
+tableMissingallDatas <-NULL
+tableMissingDatasTotal<-NULL
 
-table2018MissingPM10 <- MissingTable('PM10', 'cast2018')
-
-table2018MissingPM25 <- MissingTable('PM25', 'cast2018')
-
-table2018MissingallDatas <- MissingAll('cast2018')
-
-#All the missing datas for every station
-tableMissingDatasTotal2018 <- sqldf(' SELECT ma.IDStation, ma.NameStation, ma.MissingAmmonia, m10.MissingPM10, m25.MissingPM25,mtodos.MissingAllThree
-                                  FROM table2018MissingAmmmonia ma  JOIN table2018MissingPM10 m10
+for(index in startyear:lastyear) {
+  interestedTable <- cast[[index-startyear+1]]
+  
+  tableMissingAmmmonia[[index-startyear+1]] <- MissingTable('Ammonia', 'interestedTable')
+  
+  tableMissingPM10[[index-startyear+1]] <- MissingTable('PM10', 'interestedTable')
+  
+  tableMissingPM25[[index-startyear+1]] <- MissingTable('PM25', 'interestedTable')
+  
+  tableMissingallDatas[[index-startyear+1]] <- MissingAll('interestedTable')
+  
+  tableMissingAmmmoniatemp <- tableMissingAmmmonia[[index-startyear+1]]
+  
+  tableMissingPM10temp     <- tableMissingPM10[[index-startyear+1]]
+  
+  tableMissingPM25temp     <- tableMissingPM25[[index-startyear+1]]
+  
+  tableMissingallDatastemp <- tableMissingallDatas[[index-startyear+1]]
+  
+  tableMissingDatasTotal[[index-startyear+1]] <- sqldf(' SELECT ma.IDStation, ma.NameStation, ma.MissingAmmonia, m10.MissingPM10, m25.MissingPM25,mtodos.MissingAllThree
+                                  FROM tableMissingAmmmoniatemp ma  JOIN tableMissingPM10temp m10
                                   ON ma.IDStation = m10.IDStation
-                                  JOIN table2018MissingPM25 m25
+                                  JOIN tableMissingPM25temp m25
                                   ON ma.IDStation = m25.IDStation
-                                  JOIN table2018MissingallDatas mtodos
+                                  JOIN tableMissingallDatastemp mtodos
                                   on ma.IDStation = mtodos.IDStation
                                 ')
-
-#2019
-table2019MissingAmmmonia <- MissingTable('Ammonia', 'cast2019')
-
-table2019MissingPM10 <- MissingTable('PM10', 'cast2019')
-
-table2019MissingPM25 <- MissingTable('PM25', 'cast2019')
-
-table2019MissingallDatas <- MissingAll('cast2019')
-
-#All the missing datas for every station
-tableMissingDatasTotal2019 <- sqldf(' SELECT ma.IDStation, ma.NameStation, ma.MissingAmmonia, m10.MissingPM10, m25.MissingPM25,mtodos.MissingAllThree
-                                  FROM table2019MissingAmmmonia ma  JOIN table2019MissingPM10 m10
-                                  ON ma.IDStation = m10.IDStation
-                                  JOIN table2019MissingPM25 m25
-                                  ON ma.IDStation = m25.IDStation
-                                  JOIN table2019MissingallDatas mtodos
-                                  on ma.IDStation = mtodos.IDStation
-                                ')
-
-#2020
-table2020MissingAmmmonia <- MissingTable('Ammonia', 'cast2020')
-
-table2020MissingPM10 <-  MissingTable('PM10', 'cast2020')
-
-table2020MissingPM25 <- MissingTable('PM25', 'cast2020')
-
-table2020MissingallDatas <- MissingAll('cast2020')
-
-#All the missing datas for every station
-tableMissingDatasTotal2020 <- sqldf(' SELECT ma.IDStation, ma.NameStation, ma.MissingAmmonia, m10.MissingPM10, m25.MissingPM25,mtodos.MissingAllThree
-                                  FROM table2020MissingAmmmonia ma  JOIN table2020MissingPM10 m10
-                                  ON ma.IDStation = m10.IDStation
-                                  JOIN table2020MissingPM25 m25
-                                  ON ma.IDStation = m25.IDStation
-                                  JOIN table2020MissingallDatas mtodos
-                                  on ma.IDStation = mtodos.IDStation
-                                ')
+  name = paste("Missing",index,".csv",sep="" )
+  setwd("/Users/marcovinciguerra/Github/GitTesi/DownloadData/MissingTables")
+  write_csv(tableMissingDatasTotal[[index-startyear+1]], name)
+}
 
 #Creating the table of yes/no
-threepresents <- RegistryRed %>% 
-  group_by(IDStation) %>% 
-  summarise(n=n()) %>%
-  filter(n=3) %>% 
-  distinct(IDStation) %>%
-  pull()
+#queries yes/no table 
 
-twopresents <- RegistryRed %>% 
-  group_by(IDStation) %>% 
-  summarise(n=n()) %>%
-  filter(n=2) %>% 
-  distinct(IDStation) %>%
-  pull()
+TableA <- tableMissingAmmmonia[[1]]
 
-yesword = "yes"
-noword  = "no" 
+ColumnA <- sqldf('SELECT IDStation, NameStation, 1 as Ammonia
+      FROM TableA 
+      WHERE MissingAmmonia < 365
+      union
+      SELECT IDStation, NameStation, 0 as Ammonia
+      FROM TableA 
+      WHERE MissingAmmonia >= 365
+      order by IDStation')
 
-matriceyes <- NULL
+Table10 <- tableMissingPM10[[1]]
 
-for(val in 1:length(threpresents)) {
-  for(otherindex in 1:3) {
-    matriceyes[val, otherindex] = yesword
+Column10 <- sqldf('SELECT IDStation, NameStation, 1 as PM10
+      FROM Table10 
+      WHERE MissingPM10 < 365
+      union
+      SELECT IDStation, NameStation, 0 as PM10
+      FROM Table10 
+      WHERE MissingPM10 >= 365
+      order by IDStation')
+
+Table25 <- tableMissingPM25[[1]]
+
+Column25 <- sqldf('SELECT IDStation, NameStation, 1 as PM25
+      FROM Table25
+      WHERE MissingPM25 < 365
+      union
+      SELECT IDStation, NameStation, 0 as PM25
+      FROM Table25
+      WHERE MissingPM25 >= 365
+      order by IDStation')
+#Legend
+#1 means presence
+#0 means absence
+presencetable <- sqldf("SELECT c25.IDStation, C25.NameStation, c25.PM25, c10.PM10, ca.Ammonia
+                 FROM Column25 c25 JOIN Column10 c10
+                 ON c25.IDStation = c10.IDStation
+                 JOIN ColumnA ca
+                 ON c25.IDStation = ca.IDStation")
+setwd("/Users/marcovinciguerra/Github/GitTesi/DownloadData")
+write.csv(presencetable, "presencetable.csv")
+
+#Data plot of the centralines with all the sensors
+BlueStripes <- function(vector,year){
+  
+  for (i in 1:length(vector)) {
+    c9a <- ggplot(vector[[i]], aes(x = Date, y = Ammonia)) +
+      geom_line()  + labs(title = paste(vector[[i]][1,3],year))
+    nada <- is.na(vector[[i]]["Ammonia"])
+    c9a <- c9a + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
+                            color = "blue", size=1.5)
+    
+    c910 <- ggplot(vector[[i]], aes(x = Date, y = PM10)) +
+      geom_line() 
+    nada <- is.na(vector[[i]]["PM10"])
+    c910 <- c910 + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
+                              color = "blue", size=1.5)
+    
+    
+    c925 <- ggplot(vector[[i]], aes(x = Date, y = PM25)) +
+      geom_line() 
+    nada <- is.na(vector[[i]]["PM25"])
+    c925 <- c925 + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
+                              color = "blue", size=1.5)
+    
+    jpeg(filename =paste(vector[[i]][1,3],paste(year,".jpeg")),width = 1280, height = 720 )
+    multiplot(c9a, c910, c925)
+    dev.off()
+    
+  }
+  
+}
+
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+  
+  # Make a list FROM the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+  
+  numPlots = length(plots)
+  
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated FROM # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                     ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+  
+  if (numPlots==1) {
+    print(plots[[1]])
+    
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+    
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+      
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
   }
 }
 
-print(matriceyes)
+presencetable <- NULL
+
+for (i in 1:length(tableMissingAmmmonia)) {
+  
+  TableA <- tableMissingAmmmonia[[i]]
+  
+  ColumnA <- sqldf('SELECT IDStation, NameStation, 1 as Ammonia
+      FROM TableA 
+      WHERE MissingAmmonia < 365
+      union
+      SELECT IDStation, NameStation, 0 as Ammonia
+      FROM TableA 
+      WHERE MissingAmmonia >= 365
+      order by IDStation')
+  
+  Table10 <- tableMissingPM10[[i]]
+  
+  Column10 <- sqldf('SELECT IDStation, NameStation, 1 as PM10
+      FROM Table10 
+      WHERE MissingPM10 < 365
+      union
+      SELECT IDStation, NameStation, 0 as PM10
+      FROM Table10 
+      WHERE MissingPM10 >= 365
+      order by IDStation')
+  
+  Table25 <- tableMissingPM25[[i]]
+  
+  Column25 <- sqldf('SELECT IDStation, NameStation, 1 as PM25
+      FROM Table25
+      WHERE MissingPM25 < 365
+      union
+      SELECT IDStation, NameStation, 0 as PM25
+      FROM Table25
+      WHERE MissingPM25 >= 365
+      order by IDStation')
+  #Legend
+  #1 means presence
+  #0 means absence
+  presencetable[[i]] <- sqldf("SELECT c25.IDStation, C25.NameStation, c25.PM25, c10.PM10, ca.Ammonia
+                 FROM Column25 c25 JOIN Column10 c10
+                 ON c25.IDStation = c10.IDStation
+                 JOIN ColumnA ca
+                 ON c25.IDStation = ca.IDStation")
+  #setwd("/Users/marcovinciguerra/Github/GitTesi/DownloadData")
+  #write.csv(presencetable, paste("presencetable",i,".csv",sep = ""))
+}
+
+threeYesPlot <- NULL
+
+for (i in 1:length(presencetable)) {
+  
+  pt <- presencetable[[i]]
+  
+  threeYesPlot[[i]] <- sqldf("SELECT IDStation 
+                      FROM pt
+                      WHERE Ammonia = 1 and PM10 = 1 and PM25=1")
+  threeYesPlot[[i]] <- as.vector(t(threeYesPlot[[i]]))
+  
+}
+
+FullStations <- NULL
+n<-0
+for (i in 1:length(threeYesPlot)) {
+  
+  table <- get_ARPA_Lombardia_AQ_data(
+    ID_station = threeYesPlot[[i]],
+    Year = startyear+i-1,
+    Frequency = "daily",
+    Var_vec = NULL,
+    Fns_vec = NULL,
+    by_sensor = 0,
+    verbose = T
+  ) %>%
+    rename(
+      PM25 = PM2.5
+    )
+  
+  table1 <- data.frame(table)
+  
+  m <- 0
+  for (j in (1+n):(length(threeYesPlot[[i]])+n)) {
+    m = m+1
+    FullStations[[j]] <- sqldf(paste("SELECT *
+                             FROM table1
+                             WHERE IDStation = ", threeYesPlot[[i]][m],sep = ""))
+  }
+  BlueStripes(FullStations[(1+n):(length(threeYesPlot[[i]])+n)],startyear+i-1)
+  n <- j
+}
+
+
+lastYearStations <- threeYesPlot[[length(threeYesPlot)]]
+
+table18_20 <- get_ARPA_Lombardia_AQ_data(
+  ID_station = lastYearStations,
+  Year = c(startyear:lastyear),
+  Frequency = "daily",
+  Var_vec = NULL,
+  Fns_vec = NULL,
+  by_sensor = 0,
+  verbose = T
+) %>%
+  rename(
+    PM25 = PM2.5
+  )
+
+FullStations <- NULL
+
+for (i in 1:length(lastYearStations)) {
+  
+  FullStations[[i]] <- sqldf(paste("SELECT *
+                             FROM table18_20
+                             WHERE IDStation = ", lastYearStations[i],sep = ""))
+  
+}
+
+BlueStripes(FullStations,"2018-2020")
