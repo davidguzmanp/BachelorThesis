@@ -6,8 +6,7 @@ library(ggplot2)
 library(ggfortify)
 library(lubridate)
 
-source("/Users/marcovinciguerra/Github/GitTesi/DownloadData/Functions.R", encoding = 'UTF-8')
-source("/Users/marcovinciguerra/Github/GitTesi/DownloadData/DownloadFunction.R", encoding = 'UTF-8')
+source("~/GitHub/BachelorThesis/Rstudio code/Functions.R", encoding = 'UTF-8')
 
 #Filter datas
 registry <- get_ARPA_Lombardia_AQ_registry()
