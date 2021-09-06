@@ -319,4 +319,18 @@ for (i in 1:length(lastYearStations)) {
 
 BlueStripes(FullStations,"2018-2020")
 
+# Distances
+
+# Scatterplots
+
+plot(table18_20[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha("red", 0.3))
+plot(table18_20[,c(4:19)],  pch = 16,  col = alpha("salmon3", 0.45))
+plot(aqwe19[,c('Ammonia','PM10','PM25','Temperature','Relative_humidity','Global_radiation','Rainfall')])
+
+library(colorspace) 
+df <- table18_20
+df$color <- factor(df$NameStation,
+                   labels=c("blue", "red","green","orange","coral","brown"))
+
+plot(df[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha(as.character(df$color),0.45))
 
