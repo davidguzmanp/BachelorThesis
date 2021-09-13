@@ -196,6 +196,15 @@ map_Lombardia_stations_custom(RegistryRed,col_points = Etichetta)
 #win.graph()
 map_Lombardia_stations_custom(RegistryRed)
 
+regAQ <- get_ARPA_Lombardia_AQ_registry()
+regAQ <- regAQ[,c(1,2,4,5,6,8:11)]
+regW <- get_ARPA_Lombardia_W_registry()
+regW <- regW[,c(1,2,4:10)]
+map_Lombardia_stations(rbind(regAQ,regW))
+
+map_Lombardia_stations(regW)
+
+
 
 #PART 4: Plot of the time series
 
@@ -333,4 +342,75 @@ df$color <- factor(df$NameStation,
                    labels=c("blue", "red","green","orange","coral","brown"))
 
 plot(df[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha(as.character(df$color),0.45))
+
+#PART 5: Nearest Neighbor
+#Calculate the distances of the 2 nearest stations 
+regAQ <- get_ARPA_Lombardia_AQ_registry()
+regAQ <- regAQ %>%
+  filter(Pollutant %in% c("PM10"), is.na(DateStop)) %>%
+  distinct(IDStation,NameStation,Longitude,Latitude) %>%
+  mutate(lng = Longitude, lat = Latitude) %>%
+  sf::st_as_sf(coords = c("lng", "lat"), crs=4326)
+regW <- get_ARPA_Lombardia_W_registry()
+regW <- regW %>%
+  filter(is.na(DateStop)) %>%
+  distinct(IDStation,NameStation,Longitude,Latitude) %>%
+  mutate(lng = Longitude, lat = Latitude) %>%
+  sf::st_as_sf(coords = c("lng", "lat"), crs=4326)
+
+dist_mat <- sf::st_distance(regAQ,regW)
+
+reg_X <- regAQ
+reg_Y <- regW
+
+k <- 2
+distance <- registry_KNN_dist(reg_X,reg_Y,k)
+#distance contains the 6 best stations
+distance <- data.frame(distance[[1]])
+distance <- distance[distance[,'IDStation'] %in% threeYesPlot[[1]],]
+
+#Download the meteo-stations
+we18 <- get_ARPA_Lombardia_W_data(
+  ID_station = distance[,'reg_Y_nn1_ID'], 
+  Year = c(2018:2019),
+  Frequency = "daily",
+  Var_vec = NULL,
+  Fns_vec = NULL,
+  by_sensor = 0,
+  verbose = T
+)
+
+we19 <- get_ARPA_Lombardia_W_data(
+  ID_station = distance[,'reg_Y_nn1_ID'], 
+  Year = 2019,
+  Frequency = "daily",
+  Var_vec = NULL,
+  Fns_vec = NULL,
+  by_sensor = 0,
+  verbose = T
+)
+
+we20 <-  get_ARPA_Lombardia_W_data(
+  ID_station = distance[,'reg_Y_nn1_ID'], 
+  Year = 2020,
+  Frequency = "daily",
+  Var_vec = NULL,
+  Fns_vec = NULL,
+  by_sensor = 0,
+  verbose = T
+)
+
+tableAllyears <- get_ARPA_Lombardia_AQ_data(
+  ID_station = threeYesPlot[[1]],
+  Year = c(startyear:lastyear),
+  Frequency = "daily",
+)
+tableAllyears <- data.frame(tableAllyears)
+
+#Table with pollution stations and the first nearest weather station 
+aqwe<- sqldf('select *
+      from tableAllyears t join equiv e on t.IDStation = e.IDStation join we on e.reg_Y_nn1_ID = we.IDStation
+               where t.Date = we.Date')
+
+write_csv(aqwe,'NNdatas.csv')
 
