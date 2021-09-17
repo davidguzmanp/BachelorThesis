@@ -15,7 +15,7 @@ IDStat <- registry %>%
   filter(Pollutant%in% c("Ammonia","PM10","PM2.5"),
          is.na(DateStop),
          year(DateStart)<=2017) %>%
-  distinct(IDSensor) %>% pull() %>% sort() # Stations that measure all three since 2017 and haven't been decomessioned
+  distinct(IDSensor) %>% pull() %>% sort() # Stations that measure all three since 2017 and haven't been decommissioned
 
 RegistryRed <- registry %>% 
   filter(Pollutant%in% c("Ammonia","PM10","PM2.5"),
@@ -72,7 +72,6 @@ for(index in startyear:lastyear) {
                                   on ma.IDStation = mtodos.IDStation
                                 ')
   name = paste("Missing",index,".csv",sep="" )
-  setwd("/Users/marcovinciguerra/Github/GitTesi/DownloadData/MissingTables")
   write_csv(tableMissingDatasTotal[[index-startyear+1]], name)
 }
 
@@ -82,7 +81,7 @@ CentralineMorethan1 <- RegistryRed %>%
   summarise(n=n()) %>%
   filter(n>=1) %>% 
   distinct(IDStation) %>%
-  pull() # Stations that measure at least 2 of the variables at the same time
+  pull() # Stations that measure at least 1 of the variables at the same time
 
 cast2 <- Download(startyear, lastyear, CentralineMorethan1)
 
@@ -187,7 +186,6 @@ presencetable_red <- presencetable %>%
 
 RegistryRed <- full_join(RegistryRed,presencetable_red,by = c("IDStation"))
 
-setwd("/Users/marcovinciguerra/Github/GitTesi/DownloadData")
 write.table(presencetable, "presencetable_red.csv")
 
 #PART 3: plot of the Lombardy map
@@ -202,9 +200,8 @@ regW <- get_ARPA_Lombardia_W_registry()
 regW <- regW[,c(1,2,4:10)]
 map_Lombardia_stations(rbind(regAQ,regW))
 
+map_Lombardia_stations(regAQ,col_points = 'red')
 map_Lombardia_stations(regW)
-
-
 
 #PART 4: Plot of the time series
 
@@ -330,18 +327,6 @@ BlueStripes(FullStations,"2018-2020")
 
 # Distances
 
-# Scatterplots
-
-plot(table18_20[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha("red", 0.3))
-plot(table18_20[,c(4:19)],  pch = 16,  col = alpha("salmon3", 0.45))
-plot(aqwe19[,c('Ammonia','PM10','PM25','Temperature','Relative_humidity','Global_radiation','Rainfall')])
-
-library(colorspace) 
-df <- table18_20
-df$color <- factor(df$NameStation,
-                   labels=c("blue", "red","green","orange","coral","brown"))
-
-plot(df[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha(as.character(df$color),0.45))
 
 #PART 5: Nearest Neighbor
 #Calculate the distances of the 2 nearest stations 
@@ -370,29 +355,12 @@ distance <- data.frame(distance[[1]])
 distance <- distance[distance[,'IDStation'] %in% threeYesPlot[[1]],]
 
 #Download the meteo-stations
-we18 <- get_ARPA_Lombardia_W_data(
-  ID_station = distance[,'reg_Y_nn1_ID'], 
-  Year = c(2018:2019),
-  Frequency = "daily",
-  Var_vec = NULL,
-  Fns_vec = NULL,
-  by_sensor = 0,
-  verbose = T
-)
 
-we19 <- get_ARPA_Lombardia_W_data(
-  ID_station = distance[,'reg_Y_nn1_ID'], 
-  Year = 2019,
-  Frequency = "daily",
-  Var_vec = NULL,
-  Fns_vec = NULL,
-  by_sensor = 0,
-  verbose = T
-)
+equiv <- distance[,c('IDStation','reg_Y_nn1_ID')]
 
-we20 <-  get_ARPA_Lombardia_W_data(
+we <-  get_ARPA_Lombardia_W_data(
   ID_station = distance[,'reg_Y_nn1_ID'], 
-  Year = 2020,
+  Year = c(2018:2020),
   Frequency = "daily",
   Var_vec = NULL,
   Fns_vec = NULL,
@@ -405,6 +373,7 @@ tableAllyears <- get_ARPA_Lombardia_AQ_data(
   Year = c(startyear:lastyear),
   Frequency = "daily",
 )
+
 tableAllyears <- data.frame(tableAllyears)
 
 #Table with pollution stations and the first nearest weather station 
@@ -412,5 +381,20 @@ aqwe<- sqldf('select *
       from tableAllyears t join equiv e on t.IDStation = e.IDStation join we on e.reg_Y_nn1_ID = we.IDStation
                where t.Date = we.Date')
 
-write_csv(aqwe,'NNdatas.csv')
+write_csv(aqwe,'NNdata.csv')
+
+# single out the weather variables to study regarding their missing values
+
+# part 6: Scatterplots
+
+plot(table18_20[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha("red", 0.3))
+plot(table18_20[,c(4:19)],  pch = 16,  col = alpha("salmon3", 0.45))
+plot(aqwe19[,c('Ammonia','PM10','PM25','Temperature','Relative_humidity','Global_radiation','Rainfall')])
+
+library(colorspace) 
+df <- table18_20
+df$color <- factor(df$NameStation,
+                   labels=c("blue", "red","green","orange","coral","brown"))
+
+plot(df[,c('Ammonia','PM10','PM25')], pch = 16,  col = alpha(as.character(df$color),0.45))
 
