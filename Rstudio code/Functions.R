@@ -106,8 +106,14 @@ BlueStripesW <- function(vector,year){
     c925 <- c925 + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
                               color = "blue", size=1.5)
     
+    c92 <- ggplot(vector[[i]], aes(x = Date, y = Rainfall)) +
+      geom_line() 
+    nada <- is.na(vector[[i]]["Rainfall"])
+    c92 <- c92 + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
+                              color = "blue", size=1.5)
+    
     jpeg(filename =paste(vector[[i]][1,3],paste(year,".jpeg")),width = 1280, height = 720 )
-    multiplot(c9a, c910, c925)
+    multiplot(c9a, c910, c925, c92)
     dev.off()
     
   }

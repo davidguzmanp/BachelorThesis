@@ -426,6 +426,70 @@ write_csv(aqwe,'NNdata.csv')
 
 # single out the weather variables to study regarding their missing values
 
+regW <- get_ARPA_Lombardia_W_registry()
+
+regW <- regW %>% 
+  filter(Measure %in% c("Wind_speed","Wind_direction","Temperature","Rainfall"),
+         is.na(DateStop),
+         year(DateStart)<=2017)
+
+regW <- data.frame(regW)
+
+miniregW <- sqldf('select *
+      from regW a
+      where exists (select b.IDStation 
+                    from regW b
+                    where a.IDStation = b.IDStation and b.Measure = "Wind_speed" )
+     and exists (select b.IDStation 
+                    from regW b
+                    where  a.IDStation = b.IDStation and b.Measure = "Wind_direction" )
+      and exists (select b.IDStation 
+                    from regW b
+                    where  a.IDStation = b.IDStation and b.Measure = "Temperature" )
+      and exists (select b.IDStation 
+                    from regW b
+                    where  a.IDStation = b.IDStation and b.Measure = "Rainfall" )
+      order by a.IDStation asc')
+
+
+weStations <- sqldf('select distinct IDStation from miniregW ')
+
+we1820 <-  get_ARPA_Lombardia_W_data(
+  ID_station = weStations[1:20,1],
+  #Year = c(2018:2020),
+  Year = 2020,
+  Frequency = "daily",
+)
+
+miniregW <- miniregW %>%
+  filter(is.na(DateStop)) %>%
+  distinct(IDStation,NameStation,Longitude,Latitude) %>%
+  mutate(lng = Longitude, lat = Latitude) %>%
+  sf::st_as_sf(coords = c("lng", "lat"), crs=4326)
+
+dist_mat <- sf::st_distance(regAQ,regW)
+
+reg_X <- regAQ
+reg_Y <- miniregW
+
+k <- 2
+distance <- registry_KNN_dist(reg_X,reg_Y,k)
+distance <- data.frame(distance[[1]])
+distance <- distance[distance[,'IDStation'] %in% threeYesPlot[[1]],]
+equiv <- distance[,c('IDStation','reg_Y_nn1_ID')]
+
+we <-  get_ARPA_Lombardia_W_data(
+  ID_station = distance[,'reg_Y_nn1_ID'], 
+  Year = c(2018:2020),
+  Frequency = "daily",
+  Var_vec = NULL,
+  Fns_vec = NULL,
+  by_sensor = 0,
+  verbose = T
+)
+
+# missingWindSpeed <- MissingTable('Wind_speed','we1820')
+
 FullStationsW <- NULL
 
 WStations <- sqldf('select distinct IDStation
