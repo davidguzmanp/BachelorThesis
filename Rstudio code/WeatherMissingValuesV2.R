@@ -473,10 +473,10 @@ reg_X <- regAQ
 reg_Y <- miniregW
 
 k <- 2
-distance <- registry_KNN_dist(reg_X,reg_Y,k)
-distance <- data.frame(distance[[1]])
-distance <- distance[distance[,'IDStation'] %in% threeYesPlot[[1]],]
-equiv <- distance[,c('IDStation','reg_Y_nn1_ID')]
+distanceNew <- registry_KNN_dist(reg_X,reg_Y,k)
+distanceNew <- data.frame(distanceNew[[1]])
+distanceNew <- distanceNew[distanceNew[,'IDStation'] %in% threeYesPlot[[1]],]
+equiv <- distanceNew[,c('IDStation','reg_Y_nn1_ID')]
 
 we <-  get_ARPA_Lombardia_W_data(
   ID_station = distance[,'reg_Y_nn1_ID'], 
