@@ -479,7 +479,7 @@ distanceNew <- distanceNew[distanceNew[,'IDStation'] %in% threeYesPlot[[1]],]
 equiv <- distanceNew[,c('IDStation','reg_Y_nn1_ID')]
 
 we <-  get_ARPA_Lombardia_W_data(
-  ID_station = distance[,'reg_Y_nn1_ID'], 
+  ID_station = distanceNew[,'reg_Y_nn1_ID'], 
   Year = c(2018:2020),
   Frequency = "daily",
   Var_vec = NULL,
@@ -505,7 +505,7 @@ for (i in 1:length(WStations)) {
 }
 
 
-BlueStripesW(FullStationsW,"2018-2020")
+OrangeStripes(FullStationsW,"2018-2020")
 
 # part 6: Scatterplots
 
