@@ -358,6 +358,7 @@ for (i in 1:length(lastYearStations)) {
 
 BlueStripes(FullStations,"2018-2020")
 
+
 #PART 5: Nearest Neighbor
 #Calculate the distances of the 2 nearest stations 
 regAQ <- get_ARPA_Lombardia_AQ_registry()
@@ -478,9 +479,29 @@ distanceNew <- data.frame(distanceNew[[1]])
 distanceNew <- distanceNew[distanceNew[,'IDStation'] %in% threeYesPlot[[1]],]
 equiv <- distanceNew[,c('IDStation','reg_Y_nn1_ID')]
 
+#Join of the tables distance e distanceNew
+#Casting
+distancedf    <- distance[,]
+distanceNewdf <- distanceNew[,c(1:4)]
+
+allTheDistance <- inner_join(distancedf, distanceNew,
+                             by = c("IDStation"="IDStation"))
+#Removing columns
+allTheDistance <- subset(allTheDistance, select =-c(NameStation.y, Latitude.y, Longitude.y, 
+                                                    geometry.y, reg_Y_nn2_name.y, 
+                                                    reg_Y_nn2_ID.y,
+                                                    reg_Y_nn2_dist.y))
+
+#Renaming the variables
+allTheDistance <- rename(allTheDistance, nnCond = reg_Y_nn1_name.y,
+                         IDnnCond = reg_Y_nn1_ID.y,
+                         distNNCond= reg_Y_nn1_dist.y,
+                         
+)
+
 we <-  get_ARPA_Lombardia_W_data(
   ID_station = distanceNew[,'reg_Y_nn1_ID'], 
-  Year = c(2018:2020),
+  Year = c(startyear:lastyear),
   Frequency = "daily",
   Var_vec = NULL,
   Fns_vec = NULL,
