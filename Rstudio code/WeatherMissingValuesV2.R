@@ -509,7 +509,6 @@ we <-  get_ARPA_Lombardia_W_data(
   verbose = T
 )
 
-# missingWindSpeed <- MissingTable('Wind_speed','we1820')
 
 FullStationsW <- NULL
 

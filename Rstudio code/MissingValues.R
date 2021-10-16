@@ -23,7 +23,7 @@ IDStat <- sqldf('select distinct IDStation from registry where
 
 RegistryRed <- sqldf('select * from registry where IDStation in IDStat')
 
-#TODO PART 2: looking for stations with 1 or more pollutants 
+# PART 1: looking for stations with 1 or more pollutants----------------------- 
 
 CentralineMorethan1 <- RegistryRed %>% group_by(IDStation) %>% 
   summarise(n=n()) %>% filter(n>=1) %>% distinct(IDStation) %>%
@@ -92,9 +92,9 @@ temp <- NULL
                                       GROUP BY t.IDStation
                                        ')
   } 
-}
 
-#YES/NO TABLE
+
+# PART 2: YES/NO TABLE -----------------------------------------------------------------
 
 TableA <- tableMissingAmmmonia2[[1]]
 

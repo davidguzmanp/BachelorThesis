@@ -76,7 +76,7 @@ BlueStripes <- function(vector,year){
     c925 <- c925 + geom_vline(xintercept = vector[[i]][nada,1], alpha = 0.3, 
                               color = "blue", size=1.5)
     
-    jpeg(filename =paste(vector[[i]][1,3],paste(year,".jpeg")),width = 1280, height = 720 )
+    jpeg(filename =paste(vector[[i]][1,3],paste(year,".jpeg",sep = '')),width = 1280, height = 720 )
     multiplot(c9a, c910, c925)
     dev.off()
     
@@ -224,7 +224,7 @@ Easydownload<- function(startyear, endyear, Station) {
   #Downloading
   data<- get_ARPA_Lombardia_AQ_data(
     ID_station = Station,
-    Year = c(startyear,endyear),
+    Year = c(startyear:endyear),
     Frequency = "daily",
     Var_vec = NULL,
     Fns_vec = NULL,
