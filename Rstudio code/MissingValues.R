@@ -15,7 +15,7 @@ source("~/GitHub/BachelorThesis/Rstudio code/Functions.R", encoding = 'UTF-8')
 startyear <- 2018
 lastyear  <- 2020
 
-registry <- data.frame(get_ARPA_Lombardia_AQ_registry()) %>% rename(PM25 = PM2.5)
+registry <- data.frame(get_ARPA_Lombardia_AQ_registry()) 
 
 IDStat <- sqldf('select distinct IDStation from registry where 
                  (Pollutant="Ammonia" or Pollutant="PM10" or Pollutant="PM2.5") and
@@ -67,17 +67,16 @@ for(index in startyear:lastyear) {
                                 ')
 }
 
-
 #COUNT OF THE TOTAL OF THE MISSING data for every station
 totalMissingFromBeginning <- NULL
 temp <- NULL
-for(index in 1:(length(tableMissingdataTotal2))) {
+
+#TODO for(index in 1:(length(tableMissingdataTotal2))) {
   if(index==1) {
     totalMissingFromBeginning <- tableMissingdataTotal2[[index]]
   } else {
     temp <- tableMissingdataTotal2[[index]]
     auxiliaryTable <- totalMissingFromBeginning 
-    auxiliaryTable
     totalMissingFromBeginning <- sqldf('SELECT t.IDStation,t.NameStation, 
                                       SUM(t.MissingAmmonia+a.MissingAmmonia)  
                                       as MissingAmmonia,

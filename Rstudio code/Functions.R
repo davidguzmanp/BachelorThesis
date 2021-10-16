@@ -218,6 +218,33 @@ Download <- function(startyear, lastyear, centraline) {
   
   return(cast)
 }
+
+Easydownload<- function(startyear, endyear, Station) {
+  
+  #Downloading
+  data<- get_ARPA_Lombardia_AQ_data(
+    ID_station = Station,
+    Year = c(startyear,endyear),
+    Frequency = "daily",
+    Var_vec = NULL,
+    Fns_vec = NULL,
+    by_sensor = 0,
+    verbose = T
+  )
+  
+  #Casting
+  cast <- data.frame(data)
+  
+  #Renaming
+  cast <- cast  %>%
+    rename(
+      PM25 = PM2.5
+    )
+  
+  return(cast)
+}
+
+
 #Nearest neighbor functions
 
 ##### k_min_vals_vec_idx
