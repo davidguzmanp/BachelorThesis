@@ -64,6 +64,7 @@ dist_mat <- sf::st_distance(regAQl,regWl) #Calculating distances
 k <- 4
 
 distance <- registry_KNN_dist(regAQl,regWl,k)[[1]] #Table containing potential weather stations for a given AQ station
+write_csv(distance,'distance.csv')
 
 #2.2 Dowload of W datasets with contraints on avialable info-------------------
 
@@ -93,6 +94,7 @@ regWConstrained1 <- regWConstrained %>% filter(is.na(DateStop)) %>%
 dist_matConstrained <- sf::st_distance(regAQl,regWConstrained1) #Calculating distances
 
 distanceConstrained  <- registry_KNN_dist(regAQl,regWConstrained1,k)[[1]] #Table containing potential weather stations for a given AQ station
+write_csv(distanceConstrained,'distanceConstrained.csv')
 
 
 
@@ -106,7 +108,7 @@ regAQ <- regAQ %>%
 
 regAQtags <- regAQ %>% rename(Tag = NameStation)
 
-jpeg(filename ='AQStationsOfInterest.jpeg',width = 480, height = 480 )
+jpeg(filename ='AQStationsOfInterest.jpeg',width = 619, height = 471 )
 map_Lombardia_stations_custom(regAQtags)
 dev.off()
 
@@ -139,11 +141,11 @@ WeatherTags <- function(distance) {
 regWtags <- WeatherTags(distance)
 regWtagsConstrained <- WeatherTags(distanceConstrained)
 
-jpeg(filename ='WStationsOfInterest.jpeg',width = 480, height = 480 )
+jpeg(filename ='WStationsOfInterest.jpeg',width = 619, height = 471 )
 map_Lombardia_stations_custom(regWtags)
 dev.off()
 
-jpeg(filename ='WStationsOfInterestConstrained.jpeg',width = 480, height = 480 )
+jpeg(filename ='WStationsOfInterestConstrained.jpeg',width = 619, height = 471 )
 map_Lombardia_stations_custom(regWtagsConstrained)
 dev.off()
 
@@ -156,13 +158,62 @@ BlueStripes(total,paste(startyear,endyear,sep = '-'))
 
 #4.2 Missing Values for W Stations---------------------------------------------
 
-distance$geometry <- NULL
-w <-  get_ARPA_Lombardia_W_data(
-  ID_station = 111, 
-  Year = c(startyear:endyear),
-  Frequency = "daily",
-)
+for (j in 1:k) {
+  
+  totalW <- NULL
+  for (i in 1:nrow(distance[,paste('reg_Y_nn',j,'_ID',sep = '')])) {
+    
+    w <-  get_ARPA_Lombardia_W_data(
+      ID_station = distance[i,paste('reg_Y_nn',j,'_ID',sep = '')], 
+      Year = c(startyear:endyear),
+      Frequency = "daily")
+    
+    totalW[[i]] <- data.frame(w)
+    
+  }
+  
+  
+  OrangeStripes(totalW, paste('k=',j,startyear,endyear,sep = ' '))
+  
+}
 
 #4.3 Missing Values for constrained W Stations---------------------------------
 
+distanceConstrained$geometry <- NULL
 
+for (j in 1:k) {
+  
+  totalW <- NULL
+  for (i in 1:nrow(distanceConstrained[,paste('reg_Y_nn',j,'_ID',sep = '')])) {
+    
+    w <-  get_ARPA_Lombardia_W_data(
+      ID_station = distanceConstrained[i,paste('reg_Y_nn',j,'_ID',sep = '')], 
+      Year = c(startyear:endyear),
+      Frequency = "daily")
+    
+    totalW[[i]] <- data.frame(w)
+    
+  }
+  
+  
+  OrangeStripes(totalW, paste('k=',j,startyear,endyear,'Constrained',sep = ' '))
+  
+}
+
+
+#4.5 Unique table for AQ and W--------------------------------------------
+
+aq <- Easydownload(2018,2020,681)
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = distanceConstrained[distanceConstrained[,'IDStation']==681,'reg_Y_nn1_ID'], 
+  Year = c(startyear:endyear),
+  Frequency = "daily")
+
+equiv <- distance[,c(1,6)]
+
+aqw<- sqldf('select *
+      from aq t join equiv e on t.IDStation = e.IDStation join w on e.reg_Y_nn1_ID = w.IDStation
+               where t.Date = w.Date')
+
+
+write_csv(aqw,'NNdata.csv')
