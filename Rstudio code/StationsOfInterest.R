@@ -8,7 +8,7 @@ library(lubridate)
 library(sf)
 
 #0. Source functions ----------------------------------------------------------
-source("~/GitHub/BachelorThesis/Rstudio code/Functions.R", encoding = 'UTF-8')
+source("/Users/davidguzman/Documents/GitHub/BachelorThesis/Rstudio code/Functions.R", encoding = 'UTF-8')
 
 #Stations we are interested in:
 #1 703: Schivenoglia (R)
@@ -289,6 +289,8 @@ for (i in 1:ncol(MissingCount)) { # saving all piecharts
 }
 
 #5 Unique table for AQ and W--------------------------------------------
+
+startyear <- 2014
 
 aq <- Easydownload(startyear,endyear,arrayStations)
 w <-  get_ARPA_Lombardia_W_data(
