@@ -293,13 +293,18 @@ for (i in 1:ncol(MissingCount)) { # saving all piecharts
 startyear <- 2014
 
 aq <- Easydownload(startyear,endyear,arrayStations)
+#w <-  get_ARPA_Lombardia_W_data(
+ # ID_station = distanceConstrained[distanceConstrained[,'IDStation']==arrayStations,'reg_Y_nn1_ID'], 
+  #Year = c(startyear:endyear),
+  #Frequency = "daily")
+
 w <-  get_ARPA_Lombardia_W_data(
-  ID_station = distanceConstrained[distanceConstrained[,'IDStation']==arrayStations,'reg_Y_nn1_ID'], 
+  ID_station = c(677 , 671, 111), 
   Year = c(startyear:endyear),
   Frequency = "daily")
 
 w <-  get_ARPA_Lombardia_W_data(
-  ID_station = c(677 , 671, 111), 
+  ID_station = 671, 
   Year = c(startyear:endyear),
   Frequency = "daily")
 
