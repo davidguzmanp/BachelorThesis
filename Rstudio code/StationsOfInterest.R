@@ -303,11 +303,6 @@ w <-  get_ARPA_Lombardia_W_data(
   Year = c(startyear:endyear),
   Frequency = "daily")
 
-w <-  get_ARPA_Lombardia_W_data(
-  ID_station = 671, 
-  Year = c(startyear:endyear),
-  Frequency = "daily")
-
 
 equiv <- distanceConstrained[,c(1,6)]
 
@@ -317,5 +312,75 @@ aqw<- sqldf('select *
 
 
 write_csv(aqw,'NNdata.csv')
+
+# Cremona
+
+aq <- Easydownload(2014,2020,677)
+write_csv(aq,'AirQuality.csv')
+
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 677, 
+  Year = c(2014:2015),
+  Frequency = "daily")
+
+write_csv(w,'Weather14-15.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 677, 
+  Year = c(2016:2017),
+  Frequency = "daily")
+
+write_csv(w,'Weather16-17.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 677, 
+  Year = c(2018:2019),
+  Frequency = "daily")
+
+write_csv(w,'Weather18-19.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 677, 
+  Year = c(2020),
+  Frequency = "daily")
+
+write_csv(w,'Weather20.csv')
+
+# Schivenoglia
+
+aq <- Easydownload(2014,2020,703)
+write_csv(aq,'AirQualitySchivenoglia14-20.csv')
+
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 671, 
+  Year = c(2014:2015),
+  Frequency = "daily")
+
+write_csv(w,'WeatherSchivenoglia14-15.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 671, 
+  Year = c(2016:2017),
+  Frequency = "daily")
+
+write_csv(w,'WeatherSchivenoglia16-17.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 671, 
+  Year = c(2018:2019),
+  Frequency = "daily")
+
+write_csv(w,'WeatherSchivenoglia18-19.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 671, 
+  Year = c(2020),
+  Frequency = "daily")
+
+write_csv(w,'WeatherSchivenoglia20.csv')
+
+
 
 
