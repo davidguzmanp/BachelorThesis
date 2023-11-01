@@ -1,0 +1,64 @@
+
+2022-03-26 22:19:52.135791: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+Epoch 1/10
+2022-03-26 22:19:52.485029: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.578654: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.626502: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.707248: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.758303: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.847211: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:52.985297: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:53.086228: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:53.172860: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:53.299698: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+30/82 [=========>....................] - ETA: 1s - loss: 0.1107
+2022-03-26 22:19:55.956080: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:56.074705: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:56.122781: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:56.186962: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 22:19:56.251895: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+
+82/82 [==============================] - 6s 41ms/step - loss: 0.0999 - val_loss: 0.0904
+Epoch 2/10
+82/82 [==============================] - 2s 27ms/step - loss: 0.0982 - val_loss: 0.0907
+Epoch 3/10
+82/82 [==============================] - 2s 26ms/step - loss: 0.0986 - val_loss: 0.0895
+Epoch 4/10
+82/82 [==============================] - 2s 26ms/step - loss: 0.1018 - val_loss: 0.0929
+Epoch 5/10
+82/82 [==============================] - 2s 26ms/step - loss: 0.0975 - val_loss: 0.0886
+Epoch 6/10
+82/82 [==============================] - 2s 26ms/step - loss: 0.0952 - val_loss: 0.0906
+Epoch 7/10
+82/82 [==============================] - 2s 26ms/step - loss: 0.1016 - val_loss: 0.0898
+Epoch 8/10
+82/82 [==============================] - 2s 27ms/step - loss: 0.0974 - val_loss: 0.0947
+Epoch 9/10
+82/82 [==============================] - 2s 27ms/step - loss: 0.1000 - val_loss: 0.0922
+Epoch 10/10
+82/82 [==============================] - 2s 28ms/step - loss: 0.0963 - val_loss: 0.0908
+Trial 1 Complete [00h 00m 37s]
+val_loss: 0.08862972259521484
+Best val_loss So Far: 0.08862972259521484
+Total elapsed time: 00h 00m 37s
+INFO:tensorflow:Oracle triggered exit
+[34m[1mwandb[39m[22m: Currently logged in as: [33mdavidguzmanp[39m (use `wandb login --relogin` to force relogin)
+(1662, 36)
+(1312, 35) 1312 (1312,)
+(1312, 5, 7) (1312,) (350, 5, 7) (350,)
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0, 0.1], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |20                |?
+dropout           |0.1               |?
+layers            |1                 |?
+learning_rate     |0.01              |?

@@ -1,0 +1,20 @@
+{'units': 20, 'dropout': 0.0, 'layers': 1, 'learning_rate': 0.0001, 'batch_size': 64}
+Trial 2 Complete [00h 00m 19s]
+val_loss: 0.09253539144992828
+Best val_loss So Far: 0.08380326628684998
+Total elapsed time: 00h 00m 42s
+INFO:tensorflow:Oracle triggered exit
+[34m[1mwandb[39m[22m: Currently logged in as: [33mdavidguzmanp[39m (use `wandb login --relogin` to force relogin)
+(1662, 36)
+(1312, 35) 1312 (1312,)
+(1312, 5, 7) (1312,) (350, 5, 7) (350,)
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}

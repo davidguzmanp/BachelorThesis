@@ -1,0 +1,693 @@
+2022-03-26 01:26:23,444 INFO    MainThread:27943 [internal.py:wandb_internal():92] W&B internal server running at pid: 27943, started at: 2022-03-26 01:26:23.444250
+2022-03-26 01:26:23,445 INFO    WriterThread:27943 [datastore.py:open_for_write():77] open: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/run-3t0r0nen.wandb
+2022-03-26 01:26:23,446 DEBUG   SenderThread:27943 [sender.py:send():235] send: header
+2022-03-26 01:26:23,446 DEBUG   SenderThread:27943 [sender.py:send():235] send: run
+2022-03-26 01:26:23,651 INFO    SenderThread:27943 [dir_watcher.py:__init__():169] watching files in: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files
+2022-03-26 01:26:23,651 INFO    SenderThread:27943 [sender.py:_start_run_threads():812] run started: 3t0r0nen with start time 1648257982
+2022-03-26 01:26:23,651 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:23,652 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:23,654 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: check_version
+2022-03-26 01:26:23,654 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: check_version
+2022-03-26 01:26:23,755 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: run_start
+2022-03-26 01:26:24,657 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:24,908 DEBUG   HandlerThread:27943 [meta.py:__init__():37] meta init
+2022-03-26 01:26:24,908 DEBUG   HandlerThread:27943 [meta.py:__init__():51] meta init done
+2022-03-26 01:26:24,908 DEBUG   HandlerThread:27943 [meta.py:probe():211] probe
+2022-03-26 01:26:24,913 DEBUG   HandlerThread:27943 [meta.py:_setup_git():201] setup git
+2022-03-26 01:26:24,932 DEBUG   HandlerThread:27943 [meta.py:_setup_git():208] setup git done
+2022-03-26 01:26:24,932 DEBUG   HandlerThread:27943 [meta.py:_save_pip():55] save pip
+2022-03-26 01:26:24,933 DEBUG   HandlerThread:27943 [meta.py:_save_pip():69] save pip done
+2022-03-26 01:26:24,933 DEBUG   HandlerThread:27943 [meta.py:_save_conda():76] save conda
+2022-03-26 01:26:25,661 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/conda-environment.yaml
+2022-03-26 01:26:25,662 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/requirements.txt
+2022-03-26 01:26:26,538 DEBUG   HandlerThread:27943 [meta.py:_save_conda():86] save conda done
+2022-03-26 01:26:26,539 DEBUG   HandlerThread:27943 [meta.py:probe():249] probe done
+2022-03-26 01:26:26,541 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:26:26,541 DEBUG   SenderThread:27943 [sender.py:send():235] send: files
+2022-03-26 01:26:26,541 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-26 01:26:26,546 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:26:26,546 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:26:26,667 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/conda-environment.yaml
+2022-03-26 01:26:26,667 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-metadata.json
+2022-03-26 01:26:26,667 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:26,777 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:26:27,140 INFO    Thread-11 :27943 [upload_job.py:push():137] Uploaded file /var/folders/pn/sswhj3651l545xrjmmzd77_h0000gn/T/tmp1mgc4tu1wandb/1hqwhy2a-wandb-metadata.json
+2022-03-26 01:26:28,675 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:28,867 DEBUG   SenderThread:27943 [sender.py:send():235] send: files
+2022-03-26 01:26:28,867 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file media/graph/graph_summary_73f54eb6cb2a69105781.graph.json with policy now
+2022-03-26 01:26:28,867 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:28,867 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:29,577 INFO    Thread-12 :27943 [upload_job.py:push():137] Uploaded file /var/folders/pn/sswhj3651l545xrjmmzd77_h0000gn/T/tmp1mgc4tu1wandb/tix3lcif-media/graph/graph_summary_73f54eb6cb2a69105781.graph.json
+2022-03-26 01:26:29,681 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:29,681 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/media/graph/graph_summary_73f54eb6cb2a69105781.graph.json
+2022-03-26 01:26:29,681 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/media
+2022-03-26 01:26:29,681 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/media/graph
+2022-03-26 01:26:30,683 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:31,936 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:31,936 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:31,937 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:31,937 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:31,937 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:32,686 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:32,686 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:34,178 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:34,178 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:34,179 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:34,179 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:34,179 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:34,694 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:34,695 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:36,388 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:36,389 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:36,389 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:36,389 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:36,390 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:36,390 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:36,390 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:36,391 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:36,391 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:36,703 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:36,703 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:38,685 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:38,686 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:38,686 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:38,687 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:38,687 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:38,687 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:38,687 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:38,687 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:38,687 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:38,714 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:38,714 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:40,717 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:41,042 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:41,042 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:41,043 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:41,043 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:41,043 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:41,720 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:41,782 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:26:41,782 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:26:42,725 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:43,204 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:43,205 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:43,205 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:43,205 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:43,206 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:43,730 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:44,736 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:45,369 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:45,369 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:45,370 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:45,370 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:45,370 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:45,741 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:46,744 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:47,691 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:47,691 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:47,692 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:47,692 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:47,696 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:47,745 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:48,750 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:49,805 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:49,806 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:49,806 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:49,807 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:49,808 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:50,761 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:50,761 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:51,946 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:51,946 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:51,947 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:51,947 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:51,947 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:52,769 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:52,769 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:54,136 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:54,137 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:54,137 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:54,137 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:54,137 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:54,778 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:54,778 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/config.yaml
+2022-03-26 01:26:54,778 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:56,399 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:56,400 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:56,400 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:56,400 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:56,401 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:56,789 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:56,789 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:26:57,177 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:26:57,177 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:26:58,614 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:58,614 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:26:58,615 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:26:58,615 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:26:58,616 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:26:58,799 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:26:58,800 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:00,809 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:00,847 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:00,847 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:00,848 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:00,848 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:00,849 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:01,810 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:02,815 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:03,099 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:03,099 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:03,099 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:03,100 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:03,100 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:03,821 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:04,823 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:04,911 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:27:05,341 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:05,341 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:05,342 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:05,342 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:05,342 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:05,342 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:05,342 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:05,342 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:05,343 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:05,829 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:06,831 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:07,714 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:07,714 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:07,715 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:07,715 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:07,715 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:07,836 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:08,840 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:09,824 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:09,825 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:09,826 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:09,826 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:09,827 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:09,845 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:10,847 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:11,982 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:11,982 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:11,983 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:11,983 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:11,983 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:12,351 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:27:12,351 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:27:12,853 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:12,854 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:14,148 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:14,149 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:14,149 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:14,149 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:14,150 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:14,855 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:14,855 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:16,272 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:16,272 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:16,273 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:16,273 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:16,274 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:16,857 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:16,857 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:18,396 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:18,397 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:18,397 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:18,398 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:18,398 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:18,866 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:18,866 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:20,478 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:20,478 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:20,479 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:20,479 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:20,479 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:20,874 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:20,875 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:22,562 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:22,562 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:22,562 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:22,563 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:22,563 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:22,885 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:22,885 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:24,649 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:24,650 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:24,650 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:24,650 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:24,651 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:24,889 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:24,889 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:26,683 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:26,684 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:26,685 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:26,685 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:26,685 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:26,899 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:26,899 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:27,529 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:27:27,529 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:27:28,721 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:28,722 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:28,722 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:28,723 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:28,723 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:28,907 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:28,907 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:30,864 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:30,864 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:30,864 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:30,865 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:30,865 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:30,918 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:30,918 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:32,927 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:32,956 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:32,956 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:32,957 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:32,957 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:32,957 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:33,931 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:34,937 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:35,019 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:35,020 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:35,020 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:35,020 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:35,021 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:35,943 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:36,948 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:37,205 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:37,206 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:37,207 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:37,207 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:37,208 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:37,953 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:38,955 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:39,358 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:39,358 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:39,359 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:39,359 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:39,359 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:39,960 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:40,962 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:41,637 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:41,638 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:41,638 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:41,638 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:41,639 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:41,967 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:42,699 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:27:42,699 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:27:42,971 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:43,929 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:43,929 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:43,930 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:43,930 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:43,931 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:43,977 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:44,982 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:46,105 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:46,105 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:46,106 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:46,106 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:46,107 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:46,891 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:27:46,992 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:46,992 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:48,284 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:48,284 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:48,285 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:48,285 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:48,285 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:49,000 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:49,000 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:50,484 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:50,484 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:50,484 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:50,484 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:50,485 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:51,007 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:51,007 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:52,675 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:52,675 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:52,676 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:52,676 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:52,677 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:53,015 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:53,015 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:54,787 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:54,787 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:54,788 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:54,788 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:54,788 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:55,021 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:55,021 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:56,910 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:56,910 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:56,911 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:56,911 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:56,911 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:27:57,024 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:27:57,024 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:58,021 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:27:58,021 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:27:59,030 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:27:59,059 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:59,059 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:27:59,059 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:27:59,059 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:27:59,060 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:00,033 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:01,033 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:01,227 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:01,228 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:01,228 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:01,228 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:01,229 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:02,036 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:03,038 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:03,350 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:03,351 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:03,351 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:03,352 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:03,352 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:04,043 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:05,044 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:05,452 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:05,453 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:05,454 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:05,454 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:05,455 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:06,045 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:07,050 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:07,609 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:07,609 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:07,610 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:07,610 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:07,612 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:08,050 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:09,053 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:09,774 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:09,774 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:09,774 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:09,775 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:09,775 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:10,057 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:11,063 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:11,915 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:11,915 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:11,916 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:11,916 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:11,916 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:12,068 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:13,071 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:13,195 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:28:13,195 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:28:14,027 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:14,028 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:14,029 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:14,029 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:14,029 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:14,071 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:15,074 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:16,161 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:16,161 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:16,161 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:16,161 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:16,162 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:17,083 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:17,084 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:18,334 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:18,335 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:18,335 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:18,335 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:18,336 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:19,091 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:19,091 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:20,514 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:20,514 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:20,515 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:20,515 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:20,516 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:21,100 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:21,100 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:22,664 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:22,665 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:22,665 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:22,665 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:22,666 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:23,111 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:23,111 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:24,809 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:24,810 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:24,810 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:24,811 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:24,811 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:25,117 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:25,117 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:27,109 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:27,110 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:27,110 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:27,110 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:27,111 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:27,121 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:27,121 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:28,379 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:28:28,380 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:28:28,864 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:28:29,130 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:29,292 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:29,292 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:29,293 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:29,293 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:29,293 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:30,135 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:31,139 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:31,483 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:31,483 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:31,484 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:31,484 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:31,484 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:32,144 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:33,149 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:33,538 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:33,538 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:33,539 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:33,539 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:33,539 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:34,154 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:35,159 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:35,587 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:35,587 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:35,588 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:35,588 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:35,588 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:36,165 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:37,168 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:37,640 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:37,640 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:37,641 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:37,641 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:37,641 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:38,174 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:39,179 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:39,652 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:39,652 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:39,653 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:39,653 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:39,653 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:40,185 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:41,190 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:41,717 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:41,717 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:41,718 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:41,718 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:41,718 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:42,194 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:43,198 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:43,564 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:28:43,564 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:28:43,871 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:43,871 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:43,872 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:43,872 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:43,872 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:44,203 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:45,208 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:45,916 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:45,916 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:45,916 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:45,917 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:45,917 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:46,211 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:47,217 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:47,966 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:47,967 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:47,967 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:47,968 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:47,968 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:48,219 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:49,225 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:50,128 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:50,128 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:50,129 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:50,129 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:50,130 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:50,229 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:51,234 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:52,303 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:52,303 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:28:52,303 DEBUG   SenderThread:27943 [sender.py:send():235] send: history
+2022-03-26 01:28:52,303 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:28:52,304 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:28:53,239 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:28:53,240 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:28:58,754 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:28:58,755 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:29:05,300 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:29:07,312 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:29:09,319 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:29:10,895 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:29:13,935 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:29:13,936 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:29:29,112 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:29:29,113 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:29:44,322 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:29:44,322 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:29:52,923 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:29:59,714 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:29:59,715 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:30:14,893 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-26 01:30:14,894 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: stop_status
+2022-03-26 01:30:15,584 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:30:19,605 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:30:24,866 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:30:24,866 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:30:24,867 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-26 01:30:24,867 DEBUG   SenderThread:27943 [sender.py:send():235] send: files
+2022-03-26 01:30:24,867 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file model-best.h5 with policy live
+2022-03-26 01:30:25,624 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:30:25,625 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-26 01:30:25,625 DEBUG   SenderThread:27943 [sender.py:send():235] send: telemetry
+2022-03-26 01:30:25,634 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:30:26,344 DEBUG   SenderThread:27943 [sender.py:send():235] send: exit
+2022-03-26 01:30:26,344 INFO    SenderThread:27943 [sender.py:send_exit():371] handling exit code: 0
+2022-03-26 01:30:26,347 INFO    SenderThread:27943 [sender.py:send_exit():373] handling runtime: 242
+2022-03-26 01:30:26,347 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:26,348 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:30:26,349 INFO    SenderThread:27943 [sender.py:send_exit():379] send defer
+2022-03-26 01:30:26,349 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:26,350 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:26,350 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-26 01:30:26,350 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:26,350 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-26 01:30:26,350 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 1
+2022-03-26 01:30:26,351 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:26,351 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-26 01:30:26,640 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:30:26,640 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:30:27,107 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,107 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-26 01:30:27,107 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 2
+2022-03-26 01:30:27,110 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:27,110 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,110 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-26 01:30:27,307 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:27,308 DEBUG   SenderThread:27943 [sender.py:send():235] send: stats
+2022-03-26 01:30:27,308 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,308 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-26 01:30:27,308 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 3
+2022-03-26 01:30:27,309 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,309 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-26 01:30:27,309 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,309 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-26 01:30:27,309 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 4
+2022-03-26 01:30:27,309 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,309 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-26 01:30:27,310 DEBUG   SenderThread:27943 [sender.py:send():235] send: summary
+2022-03-26 01:30:27,310 INFO    SenderThread:27943 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-26 01:30:27,310 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 5
+2022-03-26 01:30:27,311 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,311 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-26 01:30:27,311 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 6
+2022-03-26 01:30:27,311 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,311 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-26 01:30:27,311 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-26 01:30:27,311 INFO    SenderThread:27943 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-26 01:30:27,430 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:27,640 INFO    Thread-7  :27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:30:27,641 INFO    SenderThread:27943 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/config.yaml
+2022-03-26 01:30:27,641 INFO    SenderThread:27943 [dir_watcher.py:finish():313] scan: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files
+2022-03-26 01:30:27,641 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/requirements.txt requirements.txt
+2022-03-26 01:30:27,641 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log output.log
+2022-03-26 01:30:27,643 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/config.yaml config.yaml
+2022-03-26 01:30:27,644 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json wandb-summary.json
+2022-03-26 01:30:27,645 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/conda-environment.yaml conda-environment.yaml
+2022-03-26 01:30:27,645 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-metadata.json wandb-metadata.json
+2022-03-26 01:30:27,649 INFO    SenderThread:27943 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/media/graph/graph_summary_73f54eb6cb2a69105781.graph.json media/graph/graph_summary_73f54eb6cb2a69105781.graph.json
+2022-03-26 01:30:27,649 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 7
+2022-03-26 01:30:27,649 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:27,649 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:27,650 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-26 01:30:27,650 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:27,650 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-26 01:30:27,650 INFO    SenderThread:27943 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-26 01:30:27,756 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:27,756 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:27,863 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:27,864 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:27,965 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:27,967 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,074 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:28,074 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,180 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:28,181 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,236 INFO    Thread-13 :27943 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/requirements.txt
+2022-03-26 01:30:28,297 INFO    Thread-14 :27943 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/output.log
+2022-03-26 01:30:28,301 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:28,303 INFO    Thread-16 :27943 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/wandb-summary.json
+2022-03-26 01:30:28,303 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,327 INFO    Thread-15 :27943 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/config.yaml
+2022-03-26 01:30:28,331 INFO    Thread-17 :27943 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/files/conda-environment.yaml
+2022-03-26 01:30:28,408 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:28,409 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,520 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:28,520 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:28,536 INFO    Thread-6  :27943 [sender.py:transition_state():392] send defer: 8
+2022-03-26 01:30:28,538 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:28,538 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-26 01:30:28,538 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:28,538 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-26 01:30:28,626 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:29,062 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 9
+2022-03-26 01:30:29,062 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:29,062 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:29,062 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-26 01:30:29,063 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:29,063 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-26 01:30:29,063 INFO    SenderThread:27943 [sender.py:transition_state():392] send defer: 10
+2022-03-26 01:30:29,063 DEBUG   SenderThread:27943 [sender.py:send():235] send: final
+2022-03-26 01:30:29,063 DEBUG   SenderThread:27943 [sender.py:send():235] send: footer
+2022-03-26 01:30:29,064 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: defer
+2022-03-26 01:30:29,064 INFO    HandlerThread:27943 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-26 01:30:29,064 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: defer
+2022-03-26 01:30:29,064 INFO    SenderThread:27943 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-26 01:30:29,169 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-26 01:30:29,169 DEBUG   SenderThread:27943 [sender.py:send_request():249] send_request: poll_exit
+2022-03-26 01:30:29,169 INFO    SenderThread:27943 [file_pusher.py:join():150] waiting for file pusher
+2022-03-26 01:30:29,663 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-26 01:30:29,666 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-26 01:30:29,667 DEBUG   HandlerThread:27943 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-26 01:30:29,668 INFO    HandlerThread:27943 [handler.py:finish():778] shutting down handler
+2022-03-26 01:30:30,069 INFO    WriterThread:27943 [datastore.py:close():281] close: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220326_012617-3t0r0nen/run-3t0r0nen.wandb
+2022-03-26 01:30:30,558 INFO    SenderThread:27943 [sender.py:finish():1078] shutting down sender
+2022-03-26 01:30:30,559 INFO    SenderThread:27943 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-26 01:30:30,559 INFO    SenderThread:27943 [file_pusher.py:join():150] waiting for file pusher
+2022-03-26 01:30:30,570 INFO    MainThread:27943 [internal.py:handle_exit():82] Internal process exited

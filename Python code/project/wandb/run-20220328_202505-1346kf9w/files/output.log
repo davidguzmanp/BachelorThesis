@@ -1,0 +1,32 @@
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |20                |?
+dropout           |0                 |?
+layers            |2                 |?
+learning_rate     |0.01              |?
+Epoch 1/5
+2022-03-28 20:25:31.531306: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:31.783274: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:31.819387: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:31.854519: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:31.897051: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:31.942301: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:32.008670: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:32.081552: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+82/82 [==============================] - ETA: 0s - loss: 0.1040
+82/82 [==============================] - 5s 34ms/step - loss: 0.1040 - val_loss: 0.0871
+Epoch 2/5
+55/82 [===================>..........] - ETA: 0s - loss: 0.1017
+2022-03-28 20:25:34.465984: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:34.563922: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:34.601048: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:25:34.638332: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+82/82 [==============================] - 2s 23ms/step - loss: 0.1009 - val_loss: 0.0896
+Epoch 3/5
+82/82 [==============================] - 2s 22ms/step - loss: 0.1008 - val_loss: 0.0934
+Epoch 4/5
+82/82 [==============================] - 2s 23ms/step - loss: 0.0993 - val_loss: 0.0939
+Epoch 5/5
+
+82/82 [==============================] - 2s 21ms/step - loss: 0.0992 - val_loss: 0.0940
+[34m[1mwandb[39m[22m: [33mWARNING[39m Invalid value for property run_name: 16. This will raise an error in the future.

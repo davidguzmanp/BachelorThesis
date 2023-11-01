@@ -315,7 +315,7 @@ write_csv(aqw,'NNdata.csv')
 
 # Cremona
 
-aq <- Easydownload(2014,2020,677)
+aq <- Easydownload(2014,2021,677)
 write_csv(aq,'AirQuality.csv')
 
 
@@ -380,6 +380,54 @@ w <-  get_ARPA_Lombardia_W_data(
   Frequency = "daily")
 
 write_csv(w,'WeatherSchivenoglia20.csv')
+
+# Moggio
+
+aq <- Easydownload(2014,2021,681)
+write_csv(aq,'AirQualityMoggio14-21.csv')
+
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 111, 
+  Year = c(2014:2015),
+  Frequency = "daily")
+
+write_csv(w,'WeatherMoggio14-15.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 111, 
+  Year = c(2016:2017),
+  Frequency = "daily")
+
+write_csv(w,'WeatherMoggio16-17.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 111, 
+  Year = c(2018:2019),
+  Frequency = "daily")
+
+write_csv(w,'WeatherMoggio18-19.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 111, 
+  Year = c(2020:2021),
+  Frequency = "daily")
+
+write_csv(w,'WeatherMoggio20-21.csv')
+
+w <-  get_ARPA_Lombardia_W_data(
+  ID_station = 111, 
+  Year = c(2018:2020),
+  Frequency = "daily")
+
+w1 <- read.csv('/Users/davidguzman/Documents/GitHub/GitTesi/Python/Schivenoglia/WeatherSchivenoglia18-19.csv')
+w2 <- read.csv('/Users/davidguzman/Documents/GitHub/GitTesi/Python/Schivenoglia/WeatherSchivenoglia20.csv')
+
+w <- NULL
+w[[1]] <- w1
+w[[2]] <- w2
+
+OrangeStripes(w, '2018-2019')
 
 
 

@@ -1,0 +1,21 @@
+Metal device set to: Apple M1 Pro
+systemMemory: 16.00 GB
+maxCacheSize: 5.33 GB
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0, 0.25, 0.5, 0.75], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+2022-03-26 01:09:18.489348: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
+2022-03-26 01:09:18.489533: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -> physical PluggableDevice (device: 0, name: METAL, pci bus id: <undefined>)
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |40                |?
+dropout           |0.75              |?
+layers            |2                 |?
+learning_rate     |0.01              |?

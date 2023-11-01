@@ -1,0 +1,86 @@
+2022-03-26 01:12:06.612160: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:12:06.685752: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:12:06.721142: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:12:06.756193: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lstm (LSTM)                  (None, 5, 30)             4560
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 5, 30)             7320
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 30)                7320
+_________________________________________________________________
+dense (Dense)                (None, 1)                 31
+=================================================================
+Total params: 19,231
+Trainable params: 19,231
+Non-trainable params: 0
+_________________________________________________________________
+Test RMSE: 10.561
+(1312, 35) 1312 (1312,)
+(1312, 5, 7) (1312,) (715, 5, 7) (715,)
+Test RMSE: 9.112
+Requirement already satisfied: lime in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (0.2.0.1)
+Requirement already satisfied: numpy in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from lime) (1.19.5)
+Requirement already satisfied: scipy in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from lime) (1.7.3)
+Requirement already satisfied: scikit-learn>=0.18 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from lime) (1.0.1)
+Requirement already satisfied: tqdm in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from lime) (4.62.3)
+Collecting scikit-image>=0.12
+  Downloading scikit_image-0.19.2-cp39-cp39-macosx_12_0_arm64.whl (12.4 MB)
+     |████████████████████████████████| 12.4 MB 3.3 MB/s
+[?25hRequirement already satisfied: matplotlib in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from lime) (3.5.0)
+Collecting networkx>=2.2
+  Downloading networkx-2.7.1-py3-none-any.whl (2.0 MB)
+     |████████████████████████████████| 2.0 MB 29.2 MB/s
+[?25hCollecting imageio>=2.4.1
+  Downloading imageio-2.16.1-py3-none-any.whl (3.3 MB)
+     |████████████████████████████████| 3.3 MB 8.1 MB/s
+[?25hRequirement already satisfied: packaging>=20.0 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from scikit-image>=0.12->lime) (21.3)
+Collecting PyWavelets>=1.1.1
+  Downloading PyWavelets-1.3.0-cp39-cp39-macosx_11_0_arm64.whl (4.3 MB)
+     |████████████████████████████████| 4.3 MB 31.6 MB/s
+[?25hCollecting tifffile>=2019.7.26
+  Downloading tifffile-2022.3.25-py3-none-any.whl (179 kB)
+     |████████████████████████████████| 179 kB 10.0 MB/s
+[?25hRequirement already satisfied: pillow!=7.1.0,!=7.1.1,!=8.3.0,>=6.1.0 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from scikit-image>=0.12->lime) (8.4.0)
+Requirement already satisfied: joblib>=0.11 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from scikit-learn>=0.18->lime) (1.1.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from scikit-learn>=0.18->lime) (3.0.0)
+Requirement already satisfied: fonttools>=4.22.0 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from matplotlib->lime) (4.28.2)
+Requirement already satisfied: pyparsing>=2.2.1 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from matplotlib->lime) (3.0.6)
+Requirement already satisfied: kiwisolver>=1.0.1 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from matplotlib->lime) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from matplotlib->lime) (0.11.0)
+Requirement already satisfied: python-dateutil>=2.7 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from matplotlib->lime) (2.8.2)
+Collecting numpy
+  Downloading numpy-1.22.3-cp39-cp39-macosx_11_0_arm64.whl (12.8 MB)
+     |████████████████████████████████| 12.8 MB 19.5 MB/s
+[?25hRequirement already satisfied: six>=1.5 in /Users/davidguzman/miniforge3/envs/nnenv/lib/python3.9/site-packages (from python-dateutil>=2.7->matplotlib->lime) (1.15.0)
+Installing collected packages: numpy, tifffile, PyWavelets, networkx, imageio, scikit-image
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.5
+    Uninstalling numpy-1.19.5:
+      Successfully uninstalled numpy-1.19.5
+[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+[31mkeras-tuner 1.1.0 requires kt-legacy, which is not installed.
+[31mtensorflow 2.6.2 requires numpy~=1.19.2, but you have numpy 1.22.3 which is incompatible.
+[31mtensorflow 2.6.2 requires tensorflow-estimator<2.7,>=2.6.0, but you have tensorflow-estimator 2.7.0 which is incompatible.
+[31mtensorflow-macos 2.6.0 requires numpy~=1.19.2, but you have numpy 1.22.3 which is incompatible.
+[31mnumba 0.55.1 requires numpy<1.22,>=1.18, but you have numpy 1.22.3 which is incompatible.
+Successfully installed PyWavelets-1.3.0 imageio-2.16.1 networkx-2.7.1 numpy-1.22.3 scikit-image-0.19.2 tifffile-2022.3.25
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0, 0.25, 0.5, 0.75], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |30                |?
+dropout           |0.25              |?
+layers            |2                 |?
+learning_rate     |0.0001            |?

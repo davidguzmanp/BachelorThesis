@@ -1,0 +1,62 @@
+Trial 3 Complete [00h 14m 13s]
+val_loss: 0.09324099123477936
+Best val_loss So Far: 0.08539778739213943
+Total elapsed time: 00h 55m 44s
+INFO:tensorflow:Oracle triggered exit
+Results summary
+Results in dir/tune_hypermodel
+Showing 10 best trials
+Objective(name='val_loss', direction='min')
+Trial summary
+Hyperparameters:
+units: 20
+dropout: 0.0
+layers: 3
+learning_rate: 0.0001
+batch_size: 16
+Score: 0.08539778739213943
+Trial summary
+Hyperparameters:
+units: 20
+dropout: 0.0
+layers: 3
+learning_rate: 0.0001
+batch_size: 32
+Score: 0.09203445166349411
+Trial summary
+Hyperparameters:
+units: 30
+dropout: 0.0
+layers: 3
+learning_rate: 0.01
+batch_size: 32
+Score: 0.09324099123477936
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lstm (LSTM)                  (None, 5, 20)             2240
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 5, 20)             3280
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 5, 20)             3280
+_________________________________________________________________
+lstm_3 (LSTM)                (None, 5, 20)             3280
+_________________________________________________________________
+lstm_4 (LSTM)                (None, 20)                3280
+_________________________________________________________________
+dense (Dense)                (None, 1)                 21
+=================================================================
+Total params: 15,381
+Trainable params: 15,381
+Non-trainable params: 0
+_________________________________________________________________
+Test RMSE: 9.980
+(1312, 35) 1312 (1312,)
+(1312, 5, 7) (1312,) (715, 5, 7) (715,)
+Test RMSE: 8.936
+2022-03-27 01:06:25.434608: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-27 01:06:25.602000: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-27 01:06:25.656258: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-27 01:06:25.714665: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-27 01:06:25.792231: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
