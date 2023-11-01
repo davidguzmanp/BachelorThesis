@@ -1,0 +1,295 @@
+2022-03-28 20:32:41,163 INFO    MainThread:48878 [internal.py:wandb_internal():92] W&B internal server running at pid: 48878, started at: 2022-03-28 20:32:41.163542
+2022-03-28 20:32:41,168 INFO    WriterThread:48878 [datastore.py:open_for_write():77] open: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/run-d3u1jjkj.wandb
+2022-03-28 20:32:41,170 DEBUG   SenderThread:48878 [sender.py:send():235] send: header
+2022-03-28 20:32:41,170 DEBUG   SenderThread:48878 [sender.py:send():235] send: run
+2022-03-28 20:32:41,424 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: check_version
+2022-03-28 20:32:41,425 INFO    SenderThread:48878 [dir_watcher.py:__init__():169] watching files in: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files
+2022-03-28 20:32:41,426 INFO    SenderThread:48878 [sender.py:_start_run_threads():812] run started: d3u1jjkj with start time 1648499560
+2022-03-28 20:32:41,426 DEBUG   SenderThread:48878 [sender.py:send():235] send: summary
+2022-03-28 20:32:41,426 INFO    SenderThread:48878 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-28 20:32:41,426 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: check_version
+2022-03-28 20:32:41,491 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: run_start
+2022-03-28 20:32:42,431 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-summary.json
+2022-03-28 20:32:43,071 DEBUG   HandlerThread:48878 [meta.py:__init__():37] meta init
+2022-03-28 20:32:43,072 DEBUG   HandlerThread:48878 [meta.py:__init__():51] meta init done
+2022-03-28 20:32:43,072 DEBUG   HandlerThread:48878 [meta.py:probe():211] probe
+2022-03-28 20:32:43,080 DEBUG   HandlerThread:48878 [meta.py:_setup_git():201] setup git
+2022-03-28 20:32:43,100 DEBUG   HandlerThread:48878 [meta.py:_setup_git():208] setup git done
+2022-03-28 20:32:43,100 DEBUG   HandlerThread:48878 [meta.py:_save_pip():55] save pip
+2022-03-28 20:32:43,101 DEBUG   HandlerThread:48878 [meta.py:_save_pip():69] save pip done
+2022-03-28 20:32:43,101 DEBUG   HandlerThread:48878 [meta.py:_save_conda():76] save conda
+2022-03-28 20:32:43,437 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/requirements.txt
+2022-03-28 20:32:43,438 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/conda-environment.yaml
+2022-03-28 20:32:44,741 DEBUG   HandlerThread:48878 [meta.py:_save_conda():86] save conda done
+2022-03-28 20:32:44,741 DEBUG   HandlerThread:48878 [meta.py:probe():249] probe done
+2022-03-28 20:32:44,745 DEBUG   SenderThread:48878 [sender.py:send():235] send: telemetry
+2022-03-28 20:32:44,745 DEBUG   SenderThread:48878 [sender.py:send():235] send: files
+2022-03-28 20:32:44,745 INFO    SenderThread:48878 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-28 20:32:44,754 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:32:44,754 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:32:44,941 DEBUG   SenderThread:48878 [sender.py:send():235] send: telemetry
+2022-03-28 20:32:45,380 INFO    Thread-17 :48878 [upload_job.py:push():137] Uploaded file /var/folders/pn/sswhj3651l545xrjmmzd77_h0000gn/T/tmp7xl8r5dcwandb/quojta9z-wandb-metadata.json
+2022-03-28 20:32:45,445 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/conda-environment.yaml
+2022-03-28 20:32:45,446 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:32:45,446 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_created():217] file/dir created: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-metadata.json
+2022-03-28 20:32:47,456 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:32:59,946 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:32:59,947 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:33:12,575 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/config.yaml
+2022-03-28 20:33:15,622 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:33:15,624 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:33:23,225 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:33:30,853 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:33:30,856 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:33:46,125 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:33:46,128 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:34:01,372 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:34:01,374 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:34:05,904 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:34:17,230 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:34:17,232 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:34:32,456 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:34:32,458 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:34:47,680 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:34:47,681 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:34:48,592 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:35:02,867 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:35:02,869 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:35:18,151 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:35:18,152 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:35:31,285 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:35:33,378 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:35:33,380 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:35:48,578 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:35:48,580 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:36:03,797 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:36:03,800 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:36:14,068 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:36:19,247 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:36:19,248 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:36:34,430 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:36:34,432 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:36:49,650 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:36:49,652 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:36:56,893 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:37:04,974 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:37:04,974 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:37:21,018 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:37:21,021 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:37:36,332 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:37:36,334 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:37:39,669 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:37:51,564 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:37:51,565 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:38:06,788 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:38:06,790 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:38:22,015 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:38:22,016 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:38:22,302 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:38:37,193 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:38:37,204 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:38:52,764 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:38:52,765 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:39:05,022 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:39:07,934 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:39:07,935 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:39:23,153 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:39:23,155 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:39:38,488 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:39:38,489 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:39:47,490 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:39:53,670 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:39:53,671 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:40:08,921 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:40:08,921 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:40:24,142 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:40:24,144 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:40:30,032 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:40:39,366 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:40:39,367 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:40:54,618 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:40:54,619 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:41:09,805 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:41:09,805 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:41:12,468 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:41:25,024 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:41:25,024 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:41:40,233 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:41:40,233 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:41:54,368 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:41:55,756 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:41:55,757 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:42:10,993 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:42:10,994 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:42:26,532 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:42:26,534 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:42:34,453 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:42:36,252 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:42:41,725 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:42:41,725 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:42:57,053 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:42:57,055 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:43:12,279 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:43:12,279 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:43:18,417 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:43:27,530 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:43:27,532 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:43:43,188 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:43:43,188 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:43:56,859 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:43:58,497 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:43:58,498 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:43:58,872 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:44:00,625 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:44:10,944 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:44:13,983 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:44:13,983 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:44:29,181 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-28 20:44:29,184 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: stop_status
+2022-03-28 20:44:35,022 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-28 20:44:35,022 DEBUG   SenderThread:48878 [sender.py:send():235] send: telemetry
+2022-03-28 20:44:35,023 DEBUG   SenderThread:48878 [sender.py:send():235] send: telemetry
+2022-03-28 20:44:35,050 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:44:35,608 DEBUG   SenderThread:48878 [sender.py:send():235] send: exit
+2022-03-28 20:44:35,609 INFO    SenderThread:48878 [sender.py:send_exit():371] handling exit code: 0
+2022-03-28 20:44:35,610 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:35,610 INFO    SenderThread:48878 [sender.py:send_exit():373] handling runtime: 714
+2022-03-28 20:44:35,611 INFO    SenderThread:48878 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-28 20:44:35,611 INFO    SenderThread:48878 [sender.py:send_exit():379] send defer
+2022-03-28 20:44:35,611 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:35,612 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:35,613 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-28 20:44:35,613 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:35,613 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-28 20:44:35,613 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 1
+2022-03-28 20:44:35,613 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:35,613 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-28 20:44:36,055 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:44:36,056 INFO    Thread-13 :48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-summary.json
+2022-03-28 20:44:36,801 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:36,801 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:36,801 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-28 20:44:36,802 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 2
+2022-03-28 20:44:36,802 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:36,802 DEBUG   SenderThread:48878 [sender.py:send():235] send: stats
+2022-03-28 20:44:36,802 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:36,803 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-28 20:44:36,803 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:36,803 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-28 20:44:36,803 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 3
+2022-03-28 20:44:36,803 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:36,803 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-28 20:44:36,803 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:36,803 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-28 20:44:36,803 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 4
+2022-03-28 20:44:36,804 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:36,804 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-28 20:44:36,804 DEBUG   SenderThread:48878 [sender.py:send():235] send: summary
+2022-03-28 20:44:36,804 INFO    SenderThread:48878 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-28 20:44:36,804 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:36,804 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-28 20:44:36,804 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 5
+2022-03-28 20:44:36,805 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:36,805 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-28 20:44:36,805 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:36,805 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-28 20:44:36,907 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,024 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 6
+2022-03-28 20:44:37,024 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,024 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:37,024 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-28 20:44:37,024 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:37,024 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-28 20:44:37,024 INFO    SenderThread:48878 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-28 20:44:37,061 INFO    SenderThread:48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/config.yaml
+2022-03-28 20:44:37,061 INFO    SenderThread:48878 [dir_watcher.py:_on_file_modified():230] file/dir modified: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-summary.json
+2022-03-28 20:44:37,062 INFO    SenderThread:48878 [dir_watcher.py:finish():313] scan: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files
+2022-03-28 20:44:37,062 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/requirements.txt requirements.txt
+2022-03-28 20:44:37,062 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log output.log
+2022-03-28 20:44:37,062 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/config.yaml config.yaml
+2022-03-28 20:44:37,063 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-summary.json wandb-summary.json
+2022-03-28 20:44:37,063 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/conda-environment.yaml conda-environment.yaml
+2022-03-28 20:44:37,063 INFO    SenderThread:48878 [dir_watcher.py:finish():327] scan save: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-metadata.json wandb-metadata.json
+2022-03-28 20:44:37,063 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 7
+2022-03-28 20:44:37,070 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:37,074 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-28 20:44:37,078 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:37,080 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-28 20:44:37,080 INFO    SenderThread:48878 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-28 20:44:37,125 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,125 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,232 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,232 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,323 ERROR   Thread-21 :48878 [internal_api.py:upload_file():1612] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/davidguzmanp/my-test-project/d3u1jjkj/wandb-summary.json?Expires=1648586677&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=MfTRctb%2BFASEzhnVoPxBS%2B7eTC9VQ5bjO6OGMYaVkGJI3ok1leMs2fki%2Btd74xwlAby%2B8myHO7IpNjqYI8eWcpUxlldENCpgIuTpAIL9jciEO5xrOaBZVTv69TquE2u8Bk%2FkFaDrQMeiGd%2B1tTY6ysfdY2Yt7wwai%2F2BVW%2BkW3ikr5NGMy2NvBf9xkc19v7aK1WmaZYtZgn1yp3v3HvknZZFMNOLi05jxzS2icfzajj56LcJxTMVSwg%2Fhc1fUTCDORDM8mRGhOG0Vk7%2BsIyVct2fEeV1ESDHGL7q7mc6zuNsE2Sw6CtpEQxuE39d8%2BC04sY9uOY3exWqcdrdbXK36g%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/davidguzmanp/my-test-project/d3u1jjkj/wandb-summary.json?Expires=1648586677&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=MfTRctb%2BFASEzhnVoPxBS%2B7eTC9VQ5bjO6OGMYaVkGJI3ok1leMs2fki%2Btd74xwlAby%2B8myHO7IpNjqYI8eWcpUxlldENCpgIuTpAIL9jciEO5xrOaBZVTv69TquE2u8Bk%2FkFaDrQMeiGd%2B1tTY6ysfdY2Yt7wwai%2F2BVW%2BkW3ikr5NGMy2NvBf9xkc19v7aK1WmaZYtZgn1yp3v3HvknZZFMNOLi05jxzS2icfzajj56LcJxTMVSwg%2Fhc1fUTCDORDM8mRGhOG0Vk7%2BsIyVct2fEeV1ESDHGL7q7mc6zuNsE2Sw6CtpEQxuE39d8%2BC04sY9uOY3exWqcdrdbXK36g%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x29b4e7be0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-03-28 20:44:37,323 ERROR   Thread-21 :48878 [internal_api.py:upload_file():1614] upload_file request headers: {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '28'}
+2022-03-28 20:44:37,324 ERROR   Thread-21 :48878 [internal_api.py:upload_file():1616] upload_file response body: 
+2022-03-28 20:44:37,334 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,335 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,441 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,441 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,548 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,548 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,655 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,656 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,684 INFO    Thread-18 :48878 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/requirements.txt
+2022-03-28 20:44:37,684 INFO    Thread-22 :48878 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/conda-environment.yaml
+2022-03-28 20:44:37,697 INFO    Thread-20 :48878 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/config.yaml
+2022-03-28 20:44:37,706 INFO    Thread-19 :48878 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/output.log
+2022-03-28 20:44:37,763 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,763 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,872 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,873 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:37,976 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:37,977 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,086 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,086 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,195 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,195 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,305 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,306 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,415 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,416 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,523 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,524 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,631 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,632 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,740 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,740 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,847 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,848 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:38,930 INFO    Thread-21 :48878 [upload_job.py:push():137] Uploaded file /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/files/wandb-summary.json
+2022-03-28 20:44:38,951 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:38,951 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:39,059 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:39,059 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:39,132 INFO    Thread-12 :48878 [sender.py:transition_state():392] send defer: 8
+2022-03-28 20:44:39,135 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:39,135 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-28 20:44:39,135 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:39,136 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-28 20:44:39,166 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:39,749 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 9
+2022-03-28 20:44:39,749 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:39,750 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:39,750 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-28 20:44:39,750 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:39,750 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-28 20:44:39,751 INFO    SenderThread:48878 [sender.py:transition_state():392] send defer: 10
+2022-03-28 20:44:39,751 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: defer
+2022-03-28 20:44:39,752 DEBUG   SenderThread:48878 [sender.py:send():235] send: final
+2022-03-28 20:44:39,752 INFO    HandlerThread:48878 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-28 20:44:39,752 DEBUG   SenderThread:48878 [sender.py:send():235] send: footer
+2022-03-28 20:44:39,752 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: defer
+2022-03-28 20:44:39,752 INFO    SenderThread:48878 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-28 20:44:39,857 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-28 20:44:39,857 DEBUG   SenderThread:48878 [sender.py:send_request():249] send_request: poll_exit
+2022-03-28 20:44:39,858 INFO    SenderThread:48878 [file_pusher.py:join():150] waiting for file pusher
+2022-03-28 20:44:40,327 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-28 20:44:40,329 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-28 20:44:40,330 DEBUG   HandlerThread:48878 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-28 20:44:40,330 INFO    HandlerThread:48878 [handler.py:finish():778] shutting down handler
+2022-03-28 20:44:40,755 INFO    WriterThread:48878 [datastore.py:close():281] close: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_203234-d3u1jjkj/run-d3u1jjkj.wandb
+2022-03-28 20:44:41,228 INFO    SenderThread:48878 [sender.py:finish():1078] shutting down sender
+2022-03-28 20:44:41,228 INFO    SenderThread:48878 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-28 20:44:41,228 INFO    SenderThread:48878 [file_pusher.py:join():150] waiting for file pusher
+2022-03-28 20:44:41,355 INFO    MainThread:48878 [internal.py:handle_exit():82] Internal process exited

@@ -1,0 +1,24 @@
+{
+    "os": "macOS-12.3-arm64-arm-64bit",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-03-28T20:45:36.700084",
+    "startedAt": "2022-03-28T20:45:27.452509",
+    "docker": null,
+    "cpu_count": 10,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/Users/davidguzman/Library/Jupyter/runtime/kernel-5a44aed5-74e9-4c52-b703-a586666dc0af.json"
+    ],
+    "state": "running",
+    "program": "Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/W&B_+_RandomSearch_+_Lime,_Moggio_2014_2020,_PM10,_predicts_1_day-jvsc-418e9a34-5ec1-40c9-b936-2871e6206b44.ipynb",
+    "root": "/Users/davidguzman/Documents/GitHub/BachelorThesis",
+    "git": {
+        "remote": "https://github.com/davidguzmanp/BachelorThesis.git",
+        "commit": "5dac87fbd089789adf569bc9ceb405adf997e1ed"
+    },
+    "email": "43582853+davidguzmanp@users.noreply.github.com",
+    "host": "Davids-MBP.homenet.telecomitalia.it",
+    "username": "davidguzman",
+    "executable": "/Users/davidguzman/miniforge3/envs/NNenv/bin/python"
+}

@@ -1,0 +1,225 @@
+
+Epoch 1/300
+2022-03-26 01:26:27.869316: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.225799: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.278076: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.326861: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.376521: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.414669: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.480977: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.555900: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.629586: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.697673: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:28.784342: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+82/82 [==============================] - 5s 38ms/step - loss: 0.1012 - val_loss: 0.0920
+Epoch 2/300
+ 4/82 [>.............................] - ETA: 1s - loss: 0.1112
+2022-03-26 01:26:31.278942: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:31.386463: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:31.430840: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:31.474713: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:26:31.522657: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+
+82/82 [==============================] - 2s 27ms/step - loss: 0.0974 - val_loss: 0.0910
+Epoch 3/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0966 - val_loss: 0.0888
+Epoch 4/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0959 - val_loss: 0.0884
+Epoch 5/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0981 - val_loss: 0.0932
+Epoch 6/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.1018 - val_loss: 0.0902
+Epoch 7/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.1010 - val_loss: 0.0899
+Epoch 8/300
+82/82 [==============================] - 2s 28ms/step - loss: 0.0997 - val_loss: 0.0892
+Epoch 9/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0986 - val_loss: 0.0892
+Epoch 10/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0978 - val_loss: 0.0901
+Epoch 11/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0984 - val_loss: 0.0900
+Epoch 12/300
+
+82/82 [==============================] - 2s 28ms/step - loss: 0.0966 - val_loss: 0.0933
+Epoch 13/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0975 - val_loss: 0.0889
+Epoch 14/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0974 - val_loss: 0.0936
+Epoch 15/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.1010 - val_loss: 0.0947
+Epoch 16/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0975 - val_loss: 0.0883
+Epoch 17/300
+82/82 [==============================] - 2s 28ms/step - loss: 0.0981 - val_loss: 0.0897
+Epoch 18/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0966 - val_loss: 0.0906
+Epoch 19/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0969 - val_loss: 0.0896
+Epoch 20/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0963 - val_loss: 0.0892
+Epoch 21/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0965 - val_loss: 0.0901
+Epoch 22/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0906
+Epoch 23/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0957 - val_loss: 0.0929
+Epoch 24/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0959 - val_loss: 0.0886
+Epoch 25/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0955 - val_loss: 0.0894
+Epoch 26/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0970 - val_loss: 0.0905
+Epoch 27/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0961 - val_loss: 0.0909
+Epoch 28/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0911
+Epoch 29/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0962 - val_loss: 0.0905
+Epoch 30/300
+82/82 [==============================] - 2s 25ms/step - loss: 0.0965 - val_loss: 0.0911
+Epoch 31/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0963 - val_loss: 0.0926
+Epoch 32/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0968 - val_loss: 0.0911
+Epoch 33/300
+82/82 [==============================] - 2s 28ms/step - loss: 0.0971 - val_loss: 0.0921
+Epoch 34/300
+82/82 [==============================] - 2s 28ms/step - loss: 0.0975 - val_loss: 0.0904
+Epoch 35/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0969 - val_loss: 0.0907
+Epoch 36/300
+
+82/82 [==============================] - 2s 27ms/step - loss: 0.0968 - val_loss: 0.0912
+Epoch 37/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0961 - val_loss: 0.0920
+Epoch 38/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0970 - val_loss: 0.0910
+Epoch 39/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0970 - val_loss: 0.0912
+Epoch 40/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0973 - val_loss: 0.0904
+Epoch 41/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0963 - val_loss: 0.0906
+Epoch 42/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0969 - val_loss: 0.0906
+Epoch 43/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0905
+Epoch 44/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0909
+Epoch 45/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0906
+Epoch 46/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0964 - val_loss: 0.0903
+Epoch 47/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0963 - val_loss: 0.0911
+Epoch 48/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0966 - val_loss: 0.0908
+Epoch 49/300
+82/82 [==============================] - 2s 26ms/step - loss: 0.0967 - val_loss: 0.0908
+Epoch 50/300
+82/82 [==============================] - 2s 27ms/step - loss: 0.0968 - val_loss: 0.0914
+Epoch 51/300
+ 1/82 [..............................] - ETA: 1s - loss: 0.0588.0968 - val_loss: 0.0914
+Epoch 52/300
+82/82 [==============================] - ETA: 0s - loss: 0.0965.0968 - val_loss: 0.0914
+81/82 [============================>.] - ETA: 0s - loss: 0.0958.0965 - val_loss: 0.0910
+70/82 [========================>.....] - ETA: 0s - loss: 0.0983.0961 - val_loss: 0.0914
+64/82 [======================>.......] - ETA: 0s - loss: 0.0977.0966 - val_loss: 0.0921
+56/82 [===================>..........] - ETA: 0s - loss: 0.0978.0970 - val_loss: 0.0918
+52/82 [==================>...........] - ETA: 0s - loss: 0.0980.0972 - val_loss: 0.0923
+49/82 [================>.............] - ETA: 0s - loss: 0.0982.0972 - val_loss: 0.0918
+49/82 [================>.............] - ETA: 0s - loss: 0.0981.0971 - val_loss: 0.0913
+52/82 [==================>...........] - ETA: 0s - loss: 0.0981.0969 - val_loss: 0.0914
+48/82 [================>.............] - ETA: 0s - loss: 0.0976.0971 - val_loss: 0.0912
+44/82 [===============>..............] - ETA: 0s - loss: 0.0995.0967 - val_loss: 0.0915
+19/82 [=====>........................] - ETA: 1s - loss: 0.1023.0970 - val_loss: 0.0911
+19/82 [=====>........................] - ETA: 1s - loss: 0.1025.0972 - val_loss: 0.0909
+13/82 [===>..........................] - ETA: 1s - loss: 0.0954.0971 - val_loss: 0.0917
+ 7/82 [=>............................] - ETA: 2s - loss: 0.1100.0963 - val_loss: 0.0912
+Best val_loss So Far: 0.085548825562000272s 27ms/step - loss: 0.0968 - val_loss: 0.0911
+Best val_loss So Far: 0.085548825562000272s 27ms/step - loss: 0.0968 - val_loss: 0.0911
+Total elapsed time: 00h 05m 19s
+INFO:tensorflow:Oracle triggered exit
+Results summary
+Results in dir/tune_hypermodel
+Showing 10 best trials
+Objective(name='val_loss', direction='min')
+Trial summary
+Hyperparameters:
+units: 40
+dropout: 0.1
+layers: 3
+learning_rate: 0.0001
+batch_size: 16
+Score: 0.08554882556200027
+Trial summary
+Hyperparameters:
+units: 30
+dropout: 0.1
+layers: 3
+learning_rate: 0.001
+batch_size: 16
+Score: 0.08826542645692825
+2022-03-26 01:29:05.604003: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:29:05.758532: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:29:05.825264: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:29:05.884411: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:29:05.939140: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-26 01:29:06.018601: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lstm (LSTM)                  (None, 5, 40)             7680
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 5, 40)             12960
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 5, 40)             12960
+_________________________________________________________________
+lstm_3 (LSTM)                (None, 5, 40)             12960
+_________________________________________________________________
+lstm_4 (LSTM)                (None, 40)                12960
+_________________________________________________________________
+dense (Dense)                (None, 1)                 41
+=================================================================
+Total params: 59,561
+Trainable params: 59,561
+Non-trainable params: 0
+_________________________________________________________________
+Test RMSE: 10.150
+(1312, 35) 1312 (1312,)
+(1312, 5, 7) (1312,) (715, 5, 7) (715,)
+Test RMSE: 9.130
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0, 0.1], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+Search space summary
+Default search space size: 4
+units (Int)
+{'default': None, 'conditions': [], 'min_value': 10, 'max_value': 60, 'step': 10, 'sampling': None}
+dropout (Choice)
+{'default': 0.0, 'conditions': [], 'values': [0.0, 0.1], 'ordered': True}
+layers (Int)
+{'default': None, 'conditions': [], 'min_value': 1, 'max_value': 4, 'step': 1, 'sampling': None}
+learning_rate (Choice)
+{'default': 0.01, 'conditions': [], 'values': [0.01, 0.001, 0.0001], 'ordered': True}
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |20                |?
+dropout           |0                 |?
+layers            |2                 |?
+learning_rate     |0.0001            |?
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.iter
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_1
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.beta_2
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.decay
+WARNING:tensorflow:Unresolved object in checkpoint: (root).optimizer.learning_rate
+WARNING:tensorflow:A checkpoint was restored (e.g. tf.train.Checkpoint.restore or tf.keras.Model.load_weights) but not all checkpointed values were used. See above for specific issues. Use expect_partial() on the load status object, e.g. tf.train.Checkpoint.restore(...).expect_partial(), to silence these warnings, or use assert_consumed() to make the check explicit. See https://www.tensorflow.org/guide/checkpoint#loading_mechanics for details.

@@ -1,0 +1,37 @@
+Trial 1 Complete [00h 00m 27s]
+val_loss: 0.09326346963644028
+Best val_loss So Far: 0.09326346963644028
+Total elapsed time: 00h 00m 27s
+Search: Running Trial #2
+Hyperparameter    |Value             |Best Value So Far
+units             |20                |50
+dropout           |0                 |0
+layers            |2                 |3
+learning_rate     |0.01              |0.01
+batch_size        |16                |16
+Epoch 1/5
+ 1/82 [..............................] - ETA: 3:39 - loss: 0.0802
+2022-03-28 20:32:23.035625: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.280425: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.321741: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.373961: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.413070: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.463788: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.551426: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:23.653995: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+
+82/82 [==============================] - 6s 35ms/step - loss: 0.1076 - val_loss: 0.0937
+Epoch 2/5
+58/82 [====================>.........] - ETA: 0s - loss: 0.1057
+2022-03-28 20:32:26.107285: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:26.201468: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:26.245511: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:32:26.290976: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+82/82 [==============================] - 2s 22ms/step - loss: 0.1045 - val_loss: 0.0925
+Epoch 3/5
+82/82 [==============================] - 2s 22ms/step - loss: 0.1003 - val_loss: 0.0932
+Epoch 4/5
+82/82 [==============================] - 2s 22ms/step - loss: 0.0999 - val_loss: 0.0939
+Epoch 5/5
+
+82/82 [==============================] - 2s 23ms/step - loss: 0.0991 - val_loss: 0.0939

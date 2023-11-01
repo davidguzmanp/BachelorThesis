@@ -1,0 +1,9 @@
+2022-03-28 20:25:50,662 INFO    MainThread:48638 [internal.py:wandb_internal():92] W&B internal server running at pid: 48638, started at: 2022-03-28 20:25:50.661763
+2022-03-28 20:25:50,665 INFO    WriterThread:48638 [datastore.py:open_for_write():77] open: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_202542-1ucwsm70/run-1ucwsm70.wandb
+2022-03-28 20:25:50,667 DEBUG   SenderThread:48638 [sender.py:send():235] send: header
+2022-03-28 20:50:13,120 WARNING MainThread:48638 [internal.py:is_dead():387] Internal process exiting, parent pid 48428 disappeared
+2022-03-28 20:50:13,121 ERROR   MainThread:48638 [internal.py:wandb_internal():151] Internal process shutdown.
+2022-03-28 20:50:13,201 INFO    WriterThread:48638 [datastore.py:close():281] close: /Users/davidguzman/Documents/GitHub/BachelorThesis/Python code/project/wandb/run-20220328_202542-1ucwsm70/run-1ucwsm70.wandb
+2022-03-28 20:50:13,705 INFO    HandlerThread:48638 [handler.py:finish():778] shutting down handler
+2022-03-28 20:50:14,088 INFO    SenderThread:48638 [sender.py:finish():1078] shutting down sender
+2022-03-28 20:50:14,621 INFO    MainThread:48638 [internal.py:handle_exit():82] Internal process exited

@@ -1,0 +1,28 @@
+Search: Running Trial #1
+Hyperparameter    |Value             |Best Value So Far
+units             |50                |?
+dropout           |0                 |?
+layers            |1                 |?
+learning_rate     |0.001             |?
+Epoch 1/5
+2022-03-28 20:29:30.623429: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:30.820768: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:30.875603: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:30.931577: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:30.988043: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:31.072387: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:31.156743: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+31/82 [==========>...................] - ETA: 0s - loss: 0.0983
+2022-03-28 20:29:33.004760: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:33.082211: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+2022-03-28 20:29:33.126820: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:112] Plugin optimizer for device_type GPU is enabled.
+82/82 [==============================] - 4s 27ms/step - loss: 0.0924 - val_loss: 0.0838
+Epoch 2/5
+82/82 [==============================] - 1s 17ms/step - loss: 0.0901 - val_loss: 0.0849
+Epoch 3/5
+82/82 [==============================] - 1s 17ms/step - loss: 0.0906 - val_loss: 0.0858
+Epoch 4/5
+82/82 [==============================] - 1s 17ms/step - loss: 0.0992 - val_loss: 0.0974
+Epoch 5/5
+
+82/82 [==============================] - 1s 17ms/step - loss: 0.1100 - val_loss: 0.0876
